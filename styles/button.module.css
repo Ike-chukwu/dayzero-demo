@@ -1,0 +1,17 @@
+.btn {
+    width: 150px;
+    height: 54px;
+    border: 1px solid #999999;
+    display: inline-block;
+    position: relative;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 92% 100%, 0 100%);
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    font-family: Neue Pixel Sans;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
