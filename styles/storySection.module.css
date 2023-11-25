@@ -58,7 +58,7 @@
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.5;
      width: 500px;
     margin-inline: auto;
 }
@@ -128,7 +128,9 @@
 }
 
 .heading {
-    font-size: 3rem;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
     text-transform: uppercase;
 }
 
@@ -136,8 +138,8 @@
 .briefText {
     color: #FFF;
     font-family: Neue Pixel Sans;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 2.5rem;
+    line-height: 1.5;
 }
