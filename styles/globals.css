@@ -11,7 +11,42 @@ html {
 }
 
 
+
+
 section {
   width: 1400px;
   margin-inline: auto;
+  padding-block: 5rem;
+}
+
+@media(max-width:1470px) {
+  section {
+    width: 1000px;
+  }
+}
+
+
+@media(max-width:1125px) {
+
+  section {
+    width: 800px;
+  }
+}
+
+@media(max-width:855px) {
+
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  html {
+    font-size: 60%;
+  }
+
+  section {
+    width: 100%;
+    padding-inline: 2rem;
+    padding-block: 3rem;
+  }
 }

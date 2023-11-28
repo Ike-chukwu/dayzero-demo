@@ -6,7 +6,6 @@ import Navbar from "../../Navbar/Navbar";
 const HeroSection = () => {
   return (
     <section className={styles.heroSection}>
-      <Navbar />
       <div className={styles.innerHeroSection}>
         <h1 className={styles.mainTitle}>dayzero</h1>
 

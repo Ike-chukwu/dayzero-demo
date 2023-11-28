@@ -1,11 +1,15 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "../../../styles/Navbar.module.css";
 import Button from "../Button/Button";
 
+
 const Navbar = () => {
+  const [isMenuActive, setMenuActive] = useState(false);
+
   return (
     <nav className={styles.navbar}>
-      <div className={styles.orgLogo}></div>
+      <img className={styles.orgLogo} src="/logo.png" alt="" />
 
       <div className={styles.middleIconPack}>
         <img
@@ -39,6 +43,39 @@ const Navbar = () => {
           marketplace
         </Button>
       </div>
+
+      <div
+        className={
+          isMenuActive
+            ? `${styles.mobileNav} ${styles.active}`
+            : `${styles.mobileNav}`
+        }
+      >
+        <img
+          src="/close.png"
+          className={styles.closeBtn}
+          alt=""
+          onClick={() => setMenuActive(false)}
+        />
+
+        <div className={styles.routes}>
+          <p className={styles.route}>my account</p>
+          <p className={styles.route}>marketplace</p>
+        </div>
+
+        <div className={styles.socials}>
+          <p className={styles.social}>discord</p>
+          <p className={styles.social}>telegram</p>
+          <p className={styles.social}>twitter</p>
+        </div>
+      </div>
+
+      <img
+        src="/Menu.png"
+        alt=""
+        className={styles.menu}
+        onClick={() => setMenuActive(true)}
+      />
     </nav>
   );
 };

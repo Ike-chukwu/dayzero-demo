@@ -4,7 +4,7 @@ import styles from "../../../../styles/storySection.module.css";
 const StorySection = () => {
   return (
     <div className={styles.storySectionParent}>
-      <section className={styles.container}>
+      <section className={styles.storySectionContainer}>
         <div className={styles.storyText}>
           <div className={styles.topPart}>
             <img src="/arrow.png" className={styles.arrowPic} alt="" />

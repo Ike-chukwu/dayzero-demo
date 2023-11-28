@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "../../../../styles/heroesSection.module.css";
-import { heroesList } from "../../../heroesConstants.js";
+import { heroesList } from "../../../constants.js";
 
 const HeroesSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

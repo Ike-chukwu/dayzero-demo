@@ -1,0 +1,97 @@
+.roadmapParent {
+    background: black;
+}
+
+.topSegment {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.mainHeading {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.orangeArrow {
+    width: 20px;
+}
+
+.accordianPack {
+    padding-block: 5rem;
+}
+
+.accordianUnit {
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    border-top: .1rem solid white;
+    border-bottom: .1rem solid white;
+    color: white;
+}
+
+
+.acordionQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.accordionTitle {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.accordionDate,
+.accordionDate {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+.coloredText {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+
+.chevronDown {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 1s ease-out;
+}
+
+.activeChevron {
+    transform: rotate(180deg);
+}
+
+.accodionAnswer {
+    max-height: 0rem;
+    overflow: hidden;
+    transition: all 1.4s ease-in;
+}
+
+.active {
+    max-height: 30rem;
+}
+
+.accordionBrief {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding-top: 1.5rem;
+}
+
+
+@media(max-width:1125px) {
+    .mainHeading {
+        font-size: 3rem;
+    }
+}
+
+
+@media(max-width:855px) {
+    .mainHeading {
+        font-size: 2.5rem;
+    }
+}

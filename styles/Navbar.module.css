@@ -4,12 +4,12 @@
     align-items: center;
     width: 1400px;
     margin-inline: auto;
+    z-index: 10;
 }
 
 .orgLogo {
     width: 30px;
     height: 30px;
-    background: white;
 }
 
 .middleIconPack {
@@ -24,4 +24,111 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+
+.menu {
+    display: none;
+}
+
+.mobileNav {
+    display: none;
+}
+
+
+@media(max-width:1470px) {
+    .navbar {
+        width: 1000px;
+    }
+}
+
+
+@media(max-width:1125px) {
+    .navbar {
+        width: 800px;
+    }
+}
+
+
+@media(max-width:855px) {
+    .navbar {
+        width: 100%;
+        padding-inline: 2rem;
+        position: relative;
+    }
+
+    .middleIconPack {
+        display: none;
+    }
+
+    .btnPack {
+        display: none;
+    }
+
+
+    .menu {
+        display: unset;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .mobileNav {
+        display: unset;
+        background: black;
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        color: white;
+        padding-block: 5rem;
+        padding-inline: 2rem;
+        transition: right .4s ease-out;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .closeBtn {
+        width: 25px;
+        position: absolute;
+        right: 2rem;
+        cursor: pointer;
+    }
+
+    .routes {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 6rem;
+    }
+
+    .route:first-of-type {
+        border-bottom: none;
+    }
+
+    .route {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-block: 2rem;
+        border-top: .1rem solid lightgray;
+        border-bottom: .1rem solid white;
+        width: 100%;
+    }
+
+    .socials {
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .social {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+    }
 }

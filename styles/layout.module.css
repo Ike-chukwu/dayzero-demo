@@ -1,0 +1,170 @@
+.topPart {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-block: 4rem;
+    position: relative;
+}
+
+.topPart::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: rgba(9, 9, 9, 0.70);
+    mix-blend-mode: soft-light;
+}
+
+.innerHeroSection {
+    padding-block: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    width: 1400px;
+    height: 100%;
+    margin-inline: auto;
+    position: relative;
+}
+
+.mainTitle {
+    font-family: FONTSPRING DEMO - Integral CF Medium;
+    font-size: 30rem;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.textBrief {
+    color: #FFF;
+    text-align: center;
+    font-family: Neue Pixel Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottomContent {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    color: white;
+}
+
+.btnPack {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn {
+    width: 120px;
+    height: 44px;
+    display: inline-block;
+    position: relative;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 92% 100%, 0 100%);
+    text-align: center;
+    font-family: Neue Pixel Sans;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:first-of-type {
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.btn:nth-child(2) {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: white;
+    border: .1rem solid white;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 90% 100%, 0 100%);
+    /* Adjusted clip-path */
+    text-transform: capitalize;
+}
+
+
+
+@media(max-width:1470px) {
+    .innerHeroSection {
+        width: 1000px;
+        height: 80vh;
+        margin-top: 1rem;
+    }
+
+    .mainTitle {
+        font-size: 21.5rem;
+    }
+
+
+    .bottomContent {
+        position: absolute;
+        bottom: 0%;
+    }
+}
+
+
+@media(max-width:1125px) {
+    .innerHeroSection {
+        width: 800px;
+    }
+
+    .mainTitle {
+        font-size: 17.3rem;
+        margin-top: 6.5rem;
+    }
+
+    .textBrief {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media(max-width:855px) {
+    .topPart {
+        height: 80vh;
+    }
+
+    .innerHeroSection {
+        width: 100%;
+        padding-inline: 2rem;
+    }
+
+    .mainTitle {
+        font-size: 7rem;
+        margin-top: unset;
+        text-align: center;
+    }
+
+    .bottomContent {
+        position: absolute;
+        bottom: 20%;
+    }
+}

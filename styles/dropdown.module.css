@@ -1,0 +1,100 @@
+.accordianUnit {
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    border-top: .1rem solid white;
+    border-bottom: .1rem solid white;
+    color: white;
+}
+
+
+.acordionQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.accordionTitle {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.accordionDate {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    width: 15rem;
+}
+
+.coloredText {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+
+.chevronDown {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 1s ease-out;
+}
+
+.activeChevron {
+    transform: rotate(180deg);
+}
+
+.accodionAnswer {
+    max-height: 0rem;
+    overflow: hidden;
+    transition: all 1.4s ease-in;
+}
+
+.active {
+    max-height: 30rem;
+}
+
+.accordionBrief {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding-top: 1.5rem;
+}
+
+@media(max-width:1125px) {
+
+    .accordionTitle {
+        font-size: 2.5rem;
+        text-transform: capitalize;
+    }
+
+
+    .accordionBrief {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+@media(max-width:855px) {
+    .accordionTitle {
+        font-size: 1.8rem;
+    }
+
+
+    .accordionBrief {
+        font-size: 1.4rem;
+    }
+
+    .accordionDate {
+        font-size: 1.2rem;
+        width: 15rem;
+        text-align: center;
+    }
+    
+    .coloredText {
+        font-size: 1.2rem;
+    }
+    .chevronDown {
+        width: 18px;
+        height: 18px;
+    }
+
+}

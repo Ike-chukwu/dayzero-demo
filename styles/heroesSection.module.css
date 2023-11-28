@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 7rem;
+    padding-block: 5rem;
 }
 
 .category {
@@ -162,4 +162,111 @@
     height: 72px;
     border: 2px solid #FFF;
     background: #242424;
+    cursor: pointer;
+}
+
+
+@media(max-width:1470px) {
+    .storyText {
+        width: 1000px;
+    }
+
+    .playPic {
+        width: 700px;
+        height: unset;
+    }
+
+    .mainTitle {
+        font-size: 14.9rem;
+    }
+
+    .leftCharacterPack,
+    .rightCharacterPack {
+        justify-content: unset;
+    }
+
+    .left {
+        width: 500px;
+    }
+
+    .textContent {
+        width: 400px;
+    }
+
+    .dynamicHeroesContent {
+        display: flex;
+        align-items: flex-start;
+        padding-block: 8rem;
+        /* justify-content: space-between; */
+        gap: 10rem;
+    }
+
+
+    .mainImg {
+        width: 400px;
+        height: 600px;
+        background: #D9D9D9;
+    }
+
+}
+
+
+@media(max-width:1125px) {
+    .heroesParent {
+        padding-block: unset;
+    }
+
+    .category {
+        font-size: 2.2rem;
+    }
+
+    .heroHeading {
+        font-size: 3rem;
+    }
+
+    .dynamicHeroesContent {
+        gap: 8rem;
+    }
+
+    .briefText {
+        font-size: 1.6rem;
+    }
+
+    .mainImg {
+        width: 300px;
+        height: 500px;
+        background: #D9D9D9;
+    }
+
+    .option {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btnOne {
+        font-size: 1.3rem;
+    }
+
+    .btnTwo {
+        font-size: 1.3rem;
+
+    }
+
+}
+
+
+
+@media(max-width:855px) {
+    .storyText {
+        width: 100%;
+        padding-inline: 2rem;
+    }
+
+    .heroHeading{
+        font-size: 2.5rem;
+    }
+
+    .category {
+        font-size: 1.8rem;
+    }
 }

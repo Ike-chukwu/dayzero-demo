@@ -1,0 +1,167 @@
+.gameplayParent {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url(../public/gameplay.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    display: flex;
+}
+
+
+.gameplayContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding-block: 15rem;
+    z-index: 100;
+}
+
+.gameplayParent::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #090909;
+    mix-blend-mode: soft-light;
+}
+
+
+.mainHeading {
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.bottomContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-left: 11rem;
+}
+
+.textBrief {
+    color: #FFF;
+    font-family: Neue Pixel Sans;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 350px;
+}
+
+
+.btnPack {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn {
+    width: 120px;
+    height: 44px;
+    display: inline-block;
+    position: relative;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 92% 100%, 0 100%);
+    text-align: center;
+    font-family: Neue Pixel Sans;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:first-of-type {
+    background: #FF3B00;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.btn:nth-child(2) {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: white;
+    border: .1rem solid white;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 90% 100%, 0 100%);
+    /* Adjusted clip-path */
+    text-transform: capitalize;
+}
+
+
+@media(max-width:1125px) {
+
+    .mainHeading {
+        font-size: 6rem;
+    }
+
+    .textBrief {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+@media(max-width:855px) {
+
+    .gameplayContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        padding-block: 15rem;
+        z-index: 100;
+    }
+
+    .mainHeading {
+        font-size: 6rem;
+    }
+
+
+    .bottomContent {
+        padding-left: 5rem;
+    }
+
+    .textBrief {
+        width: 100%;
+    }
+
+}
+
+
+@media(max-width:400px) {
+
+    .gameplayParent {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .gameplayContainer {
+        gap: 10rem;
+        padding-block: unset;
+    }
+
+    .mainHeading {
+        font-size: 5rem;
+        padding-top: 2rem;
+    }
+
+
+    .bottomContent {
+        padding-left: 5rem;
+    }
+
+}
