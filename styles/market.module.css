@@ -1,6 +1,5 @@
 .marketParent {
     background: #FF3B00;
-    /* height: 70vh; */
     position: relative;
 }
 
@@ -18,11 +17,8 @@
 .marketSection {
     border-bottom: .2rem solid black;
     display: flex;
-    height: 50vh;
     padding-block: unset;
 }
-
-.innerLeftMarketPlace {}
 
 .leftMarketPlace {
     padding-top: 5rem;
@@ -74,7 +70,7 @@
     cursor: pointer;
     background: black;
     text-transform: uppercase;
-    margin-bottom: 6.2rem;
+    margin-bottom: 4.8rem;
     margin-left: 2rem;
 }
 
@@ -91,10 +87,6 @@
 
 .categoryPack {
     padding-top: 5rem;
-}
-
-.innerCategory {
-    padding-left: 2rem;
 }
 
 .category {
@@ -120,7 +112,6 @@
 
 .hrTwo {
     width: 100%;
-    /* margin-bottom: 5rem; */
 }
 
 
@@ -181,9 +172,6 @@
         font-size: 1.6rem;
     }
 
-    .category {
-        padding-left: 1rem;
-    }
 
     .bottomSection {
         width: 800px;
@@ -199,14 +187,97 @@
         width: 50%;
         display: flex;
         justify-content: flex-end;
-        border-right: .1rem solid black;
-    
+
     }
-    
+
+    .category {
+        font-size: 2rem;
+    }
+
     .rightEdge {
         font-size: 1.4rem;
         padding-block: 3rem;
         margin-right: 1rem;
     }
+
+
+}
+
+
+@media(max-width:855px) {
+
+    .marketSection {
+        padding-inline: unset;
+    }
+
+    .briefText {
+        font-size: 1.2rem;
+        padding-right: 1rem;
+    }
+
+    .btnTwo {
+        margin-bottom: 4rem;
+    }
+
+
+    .bottomSection {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .leftCategory {
+        width: 100%;
+        border-bottom: .2rem solid black;
+    }
+
+    .spanCover {
+        width: 33.3%;
+    }
+
+    .leftBox {
+        text-align: center;
+        width: 100%;
+        padding-inline: unset;
+    }
+
+    .rightCategory {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .category {
+        padding-left: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .rightEdge {
+        font-size: 1.4rem;
+        padding-block: 3rem;
+        margin-left: 2rem;
+    }
+
+    .spanCover:last-of-type {
+        border-right: none;
+    }
+
+
+}
+
+
+@media(max-width:280px) {
+
+
+    .btnTwo {
+        width: 80px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .rightCategory {
+        border-right: none;
+
+    }
+
+
 
 }

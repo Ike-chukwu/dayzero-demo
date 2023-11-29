@@ -133,3 +133,19 @@
     }
 
 }
+
+
+@media(max-width:280px) {
+
+    .mainTitle {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .image {
+        width: 150px;
+    }
+
+
+
+}

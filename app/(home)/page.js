@@ -7,10 +7,12 @@ import RoadMap from "../components/Sections/RoadMap/RoadMap";
 import Slider from "../components/Sections/Slider/Slider";
 import Gameplay from "../components/Sections/Gameplay/Gameplay";
 import Market from "../components/Sections/Market/Market";
+import Wallet from "../components/Wallet/Wallet";
 
 export default function Home() {
   return (
     <main className={styles.heroSection}>
+      <Wallet />
       <StorySection />
       <HeroesSection />
       <RoadMap />

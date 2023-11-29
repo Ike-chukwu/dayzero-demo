@@ -1,0 +1,106 @@
+.home {
+    background: black;
+    display: none;
+}
+
+.overallContainer {
+    width: 1400px;
+    margin-inline: auto;
+    padding-block: 3rem;
+}
+
+.mainTitle {
+    font-size: 18.9rem;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    color: white;
+}
+
+.itemContainer {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-block: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    cursor: grab;
+    user-select: none;
+}
+
+.activated {
+    cursor: grabbing;
+}
+
+.image {
+    width: 500px;
+    pointer-events: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.specificImg {
+    width: 100%;
+}
+
+.environmentName {
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    align-self: flex-end;
+}
+
+.aspect {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.notActive {
+    color: rgba(255, 255, 255, 0.40);
+}
+
+
+@media(max-width:855px) {
+
+    .home {
+        background: unset;
+        display: unset;
+    }
+
+    .mainTitle {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .overallContainer {
+        width: 100%;
+
+    }
+
+    .image {
+        width: 200px;
+    }
+
+    .environmentName {
+        font-size: 1.6rem;
+    }
+
+
+}
+
+
+@media(max-width:280px) {
+
+    .aspect {
+        font-size: 2rem;
+    }
+
+}

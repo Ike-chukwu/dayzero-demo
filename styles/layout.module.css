@@ -168,3 +168,25 @@
         bottom: 20%;
     }
 }
+
+
+@media(max-width:280px) {
+
+    .btn {
+        width: 90px;
+        height: 40px;
+    }
+
+    .mainTitle {
+        font-size: 5rem;
+    }
+
+    .textBrief {
+        font-size: 1.4rem;
+    }
+
+    .bottomContent {
+        position: absolute;
+        bottom: 20%;
+    }
+}

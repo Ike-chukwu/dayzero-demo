@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 export default function RootLayout({ children }) {
   const pathName = usePathname();
   const [location, setLocation] = useState(pathName);
+  const [isWalletOpen, setWalletOpen] = useState(false);
 
   useEffect(() => {
     // Update the location state whenever the route changes
@@ -25,7 +26,7 @@ export default function RootLayout({ children }) {
             backgroundImage: pathName === "/" ? "url(/homePic.jpg)" : null,
           }}
         >
-          <Navbar />
+          <Navbar isWalletOpen={isWalletOpen} setWalletOpen={setWalletOpen} />
           {location === "/" && (
             <div className={styles.innerHeroSection}>
               <h1 className={styles.mainTitle}>dayzero</h1>

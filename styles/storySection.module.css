@@ -277,8 +277,6 @@
     .textContent {
         width: 300px;
     }
-
-
 }
 
 
@@ -292,7 +290,24 @@
         font-size: 4rem;
         text-align: center;
     }
+}
 
 
+@media(max-width:280px) {
+    .playPic {
+        width: 250px;
+    }
+
+    .mainTitle {
+        font-size: 3rem;
+    }
+
+    .briefText {
+        font-size: 1.4rem;
+    }
+
+    .textContent {
+        width: 100%;
+    }
 
 }

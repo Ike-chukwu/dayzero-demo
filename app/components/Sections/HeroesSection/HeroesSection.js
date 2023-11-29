@@ -3,22 +3,17 @@
 import React, { useState } from "react";
 import styles from "../../../../styles/heroesSection.module.css";
 import { heroesList } from "../../../constants.js";
+import HeroesSlider from "../../HeroesSlider/HeroesSlider";
 
 const HeroesSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  //function that is triggered when any category is clicked
-  const clickCategoryHandler = () => {
-    const position = heroesList.findIndex(
-      (item) => item.category == currentCategory
-    );
-    console.log(position);
-  };
 
   return (
     <div className={styles.heroesParent}>
       <section className={styles.heroesContainer}>
         <h1 className={styles.heroHeading}>heroes</h1>
+        <HeroesSlider currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} heroesList={heroesList} />
         <div className={styles.heroCategories}>
           {heroesList.map((info, index) => {
             if (index == currentIndex) {

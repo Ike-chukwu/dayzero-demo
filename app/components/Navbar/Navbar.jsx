@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import styles from "../../../styles/Navbar.module.css";
 import Button from "../Button/Button";
 
-
-const Navbar = () => {
+const Navbar = (props) => {
   const [isMenuActive, setMenuActive] = useState(false);
 
   return (
@@ -61,6 +60,7 @@ const Navbar = () => {
         <div className={styles.routes}>
           <p className={styles.route}>my account</p>
           <p className={styles.route}>marketplace</p>
+          <p className={styles.route}>dashboard</p>
         </div>
 
         <div className={styles.socials}>

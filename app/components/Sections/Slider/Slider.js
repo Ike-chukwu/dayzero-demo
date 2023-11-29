@@ -29,7 +29,6 @@ const Slider = () => {
     const currentMousePosition = e.pageX || e.touches[0].pageX;
     setMouseMoved(currentMousePosition - startX);
     setCanClickLink(false);
-    
   };
 
   const handleMouseUp = () => {
@@ -76,11 +75,7 @@ const Slider = () => {
             >
               <div className={styles.image}>
                 <img className={styles.specificImg} src={item.img} alt="" />
-                <p
-                  className={styles.environmentName}
-                >
-                  {item.name}
-                </p>
+                <p className={styles.environmentName}>{item.name}</p>
               </div>
             </span>
           ))}

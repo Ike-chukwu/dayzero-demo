@@ -88,13 +88,28 @@
         width: 15rem;
         text-align: center;
     }
-    
+
     .coloredText {
         font-size: 1.2rem;
     }
+
     .chevronDown {
         width: 18px;
         height: 18px;
+    }
+
+}
+
+
+
+@media(max-width:280px) {
+
+    .accordionTitle {
+        font-size: 1.6rem;
+    }
+
+    .accordianUnit {
+        padding-inline: 0rem;
     }
 
 }
