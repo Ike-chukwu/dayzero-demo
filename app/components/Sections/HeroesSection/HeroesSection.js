@@ -17,7 +17,7 @@ const HeroesSection = () => {
         <div className={styles.heroCategories}>
           {heroesList.map((info, index) => {
             if (index == currentIndex) {
-              return <span className={styles.category}>{info.category}</span>;
+              return <span key={index} className={styles.category}>{info.category}</span>;
             }
             return (
               <span
@@ -25,6 +25,7 @@ const HeroesSection = () => {
                   setCurrentIndex(index);
                 }}
                 className={`${styles.category} ${styles.notActive}`}
+                key={index}
               >
                 {info.category}
               </span>
