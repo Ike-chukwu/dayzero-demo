@@ -12,7 +12,7 @@ import Wallet from "../components/Wallet/Wallet";
 export default function Home() {
   return (
     <main className={styles.heroSection}>
-      <Wallet />
+      <HeroSection />
       <StorySection />
       <HeroesSection />
       <RoadMap />

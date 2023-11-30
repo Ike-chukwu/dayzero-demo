@@ -1,11 +1,12 @@
 .topPart {
     height: 100vh;
+    background-image: url(../public/homePic.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     position: relative;
     padding-block: 4rem;
-    position: relative;
 }
 
 .topPart::after {
@@ -138,7 +139,7 @@
 
     .mainTitle {
         font-size: 17.3rem;
-        margin-top: 6.5rem;
+        margin-top: 7rem;
     }
 
     .textBrief {
@@ -159,7 +160,6 @@
 
     .mainTitle {
         font-size: 7rem;
-        margin-top: unset;
         text-align: center;
     }
 
@@ -179,6 +179,7 @@
 
     .mainTitle {
         font-size: 5rem;
+        margin-top: 3rem;
     }
 
     .textBrief {

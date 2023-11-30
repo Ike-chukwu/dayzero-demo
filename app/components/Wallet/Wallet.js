@@ -1,9 +1,21 @@
 import React from "react";
 import styles from "../../../styles/wallet.module.css";
 
-const Wallet = () => {
+const Wallet = (props) => {
   return (
-    <div className={styles.walletParent}>
+    <div
+      className={
+        props.isWalletOpen
+          ? `${styles.walletParent} ${styles.active}`
+          : `${styles.walletParent}`
+      }
+    >
+      <img
+        src="/close.png"
+        className={styles.closeBtn}
+        alt=""
+        onClick={() => props.setWalletOpen(false)}
+      />
       <div className={styles.walletBtnPack}>
         <div className={styles.topSection}>
           <h2 className={styles.heading}>connect your wallet</h2>

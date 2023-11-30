@@ -60,7 +60,15 @@ const Navbar = (props) => {
         <div className={styles.routes}>
           <p className={styles.route}>my account</p>
           <p className={styles.route}>marketplace</p>
-          <p className={styles.route}>dashboard</p>
+          <p
+            className={styles.route}
+            onClick={() => {
+              props.setWalletOpen(true);
+              setMenuActive(false);
+            }}
+          >
+            dashboard
+          </p>
         </div>
 
         <div className={styles.socials}>
