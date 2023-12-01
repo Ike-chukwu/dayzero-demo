@@ -35,7 +35,15 @@ const Navbar = (props) => {
       </div>
 
       <div className={styles.btnPack}>
-        <Button bgColor="white" color="black">
+        <Button
+          bgColor="white"
+          color="black"
+          onClick={(e) => {
+            e.preventDefault();
+            setMenuActive(false);
+            props.setWalletOpen(true);
+          }}
+        >
           my account
         </Button>
         <Button bgColor="#FF3B00" color="white">
@@ -58,17 +66,16 @@ const Navbar = (props) => {
         />
 
         <div className={styles.routes}>
-          <p className={styles.route}>my account</p>
-          <p className={styles.route}>marketplace</p>
           <p
             className={styles.route}
             onClick={() => {
-              props.setWalletOpen(true);
               setMenuActive(false);
+              props.setWalletOpen(true);
             }}
           >
-            dashboard
+            my account
           </p>
+          <p className={styles.route}>marketplace</p>
         </div>
 
         <div className={styles.socials}>
