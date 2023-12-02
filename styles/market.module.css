@@ -254,6 +254,7 @@
     .rightCategory {
         width: 100%;
         justify-content: flex-start;
+        border-right: none;
     }
 
     .category {
@@ -266,6 +267,12 @@
         padding-block: 3rem;
         margin-left: 2rem;
     }
+
+    .leftCategory {
+        border-right: none;
+        border-left: none;
+    }
+    
 
     .spanCover:last-of-type {
         border-right: none;

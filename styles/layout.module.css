@@ -57,10 +57,6 @@
 }
 
 .bottomContent {
-    /* position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%); */
     display: flex;
     align-items: center;
     flex-direction: column;
