@@ -1,5 +1,4 @@
 .topPart {
-    height: 100vh;
     background-image: url(../public/homePic.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +24,7 @@
 .innerHeroSection {
     padding-block: 5rem;
     display: flex;
-    justify-content: space-between;
+    gap: 20rem;
     flex-direction: column;
     position: relative;
     width: 1400px;

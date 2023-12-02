@@ -230,6 +230,11 @@
         border-bottom: .2rem solid black;
     }
 
+    .leftMarketPlace {
+        border-left: none;
+    }
+
+
     .spanCover {
         width: 33.3%;
     }
@@ -238,6 +243,12 @@
         text-align: center;
         width: 100%;
         padding-inline: unset;
+    }
+
+
+    .rightMarketPlace {
+        border-right: none;
+
     }
 
     .rightCategory {
