@@ -1,23 +1,35 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../../../styles/heroesSection.module.css";
 import { heroesList } from "../../../constants.js";
 import HeroesSlider from "../../HeroesSlider/HeroesSlider";
 
 const HeroesSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentMobileSection, setCurrentMobileSection] = useState("aboutText");
 
+  useEffect(() => {
+    console.log(heroesList[currentIndex][currentMobileSection].title);
+  }, [currentIndex]);
 
   return (
     <div className={styles.heroesParent}>
       <section className={styles.heroesContainer}>
         <h1 className={styles.heroHeading}>heroes</h1>
-        <HeroesSlider currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} heroesList={heroesList} />
+        <HeroesSlider
+          currentIndex={currentIndex}
+          setCurrentIndex={setCurrentIndex}
+          heroesList={heroesList}
+        />
         <div className={styles.heroCategories}>
           {heroesList.map((info, index) => {
             if (index == currentIndex) {
-              return <span key={index} className={styles.category}>{info.category}</span>;
+              return (
+                <span key={index} className={styles.category}>
+                  {info.category}
+                </span>
+              );
             }
             return (
               <span
@@ -66,9 +78,35 @@ const HeroesSection = () => {
           </div>
         </div>
 
-
-        <div className="mobileHeroes">
-          
+        <div className={styles.dynamicMobileContent}>
+          <h3 className={styles.heading}>
+            {heroesList[currentIndex].aboutText.title}
+          </h3>
+          <div className={styles.dynamicAspects}>
+            <button
+              className={
+                currentMobileSection === "aboutText"
+                  ? `${styles.dynamicCategory} ${styles.activeBtn}`
+                  : `${styles.dynamicCategory}`
+              }
+              onClick={() => setCurrentMobileSection("aboutText")}
+            >
+              about
+            </button>
+            <button
+              className={
+                currentMobileSection === "abilityText"
+                  ? `${styles.dynamicCategory} ${styles.activeBtn}`
+                  : `${styles.dynamicCategory}`
+              }
+              onClick={() => setCurrentMobileSection("abilityText")}
+            >
+              special ability
+            </button>
+          </div>
+          <p className={styles.briefText}>
+            {heroesList[currentIndex][currentMobileSection].pText}
+          </p>
         </div>
       </section>
     </div>
