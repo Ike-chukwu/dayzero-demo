@@ -1,7 +1,15 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import styles from "../../../styles/wallet.module.css";
 
 const Wallet = (props) => {
+  useEffect(() => {
+    const html = document.querySelector("html");
+    if (html) {
+      html.style.overflow = props.isWalletOpen ? "hidden" : "auto";
+    }
+  }, [props.isWalletOpen]);
+
   return (
     <div
       className={
