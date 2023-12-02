@@ -1,10 +1,19 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../../../styles/Navbar.module.css";
 import Button from "../Button/Button";
 
 const Navbar = (props) => {
   const [isMenuActive, setMenuActive] = useState(false);
+
+  useEffect(() => {
+    const html = document.querySelector("html")
+    if(html){
+      html.style.overflow = isMenuActive? "hidden" : "auto"
+    }
+  }, [isMenuActive])
+
+
 
   return (
     <nav className={styles.navbar}>

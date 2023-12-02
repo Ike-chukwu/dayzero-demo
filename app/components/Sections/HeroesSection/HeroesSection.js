@@ -65,6 +65,11 @@ const HeroesSection = () => {
             </div>
           </div>
         </div>
+
+
+        <div className="mobileHeroes">
+          
+        </div>
       </section>
     </div>
   );

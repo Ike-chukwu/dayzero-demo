@@ -89,13 +89,12 @@
 }
 
 .btn:nth-child(2) {
-    background: none;
+    background: #FF3B00;;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
     color: white;
-    border: .1rem solid white;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 90% 100%, 0 100%);
     /* Adjusted clip-path */
     text-transform: capitalize;

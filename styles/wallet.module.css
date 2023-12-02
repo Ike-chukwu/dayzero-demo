@@ -1,6 +1,5 @@
 .walletParent {
-    background: url(/walletPic.png);
-    height: 100vh;
+    background: url(/walletPic.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +14,12 @@
     z-index: 100;
     scale: 0;
     transition: scale .4s ease-out;
+    padding-block: 5rem;
+    overflow-y: scroll;
+}
+
+.walletParent::-webkit-scrollbar {
+    display: none;
 }
 
 .walletParent::after {
@@ -26,7 +31,7 @@
     height: 100%;
     background: #090909;
     mix-blend-mode: soft-light;
-
+    z-index: -1;
 }
 
 .active {
@@ -131,6 +136,17 @@
     cursor: pointer;
     color: white;
     font-weight: bold;
+}
+
+/* Media query for landscape mode on phones */
+@media screen and (max-width: 920px) and (orientation: landscape) {
+    .walletParent {
+        align-items: flex-start;
+    }
+
+    .walletParent::after {
+        display: none;
+    }
 }
 
 

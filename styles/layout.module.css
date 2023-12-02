@@ -57,6 +57,10 @@
 }
 
 .bottomContent {
+    /* position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%); */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -105,7 +109,7 @@
     justify-content: center;
     gap: .5rem;
     color: white;
-    border: .1rem solid white;
+    background: #FF3B00;;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 90% 100%, 0 100%);
     /* Adjusted clip-path */
     text-transform: capitalize;
