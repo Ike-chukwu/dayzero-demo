@@ -22,7 +22,7 @@ const StorySection = () => {
         </div>
 
         <div className={styles.playSection}>
-          <h1 className={`${styles.mainTitle} ${stylesTwo.redCustomFont}`}>
+          <h1 className={`${styles.mainTitle} redCustomFont`}>
             how to play
           </h1>
           <div className={styles.fullCharacterPack}>

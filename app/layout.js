@@ -8,6 +8,8 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Wallet from "./components/Wallet/Wallet";
 
+
+
 export default function RootLayout({ children }) {
   const [isWalletOpen, setWalletOpen] = useState(false);
 

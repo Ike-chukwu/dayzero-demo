@@ -49,14 +49,14 @@
     text-transform: uppercase;
     text-align: center;
     color: white;
-    font-family: 'FONTSPRING DEMO - Integral CF Medium';
+    font-family: 'Integral CF Medium'
 }
 
 
 .storyContent {
     color: #FFF;
     text-align: center;
-    font-family: Neue Pixel Sans;
+    font-family: 'Neue Pixel Sans';
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
@@ -135,7 +135,7 @@
     color: white;
     text-transform: uppercase;
     text-transform: uppercase;
-    font-family: 'FONTSPRING DEMO - Integral CF Medium', sans-serif;
+    font-family: 'Integral CF Medium', sans-serif;
 
 }
 

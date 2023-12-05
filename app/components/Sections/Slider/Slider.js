@@ -5,7 +5,6 @@ import "../../../../styles/slider.module.css";
 import { environments } from "../../../constants";
 import Link from "next/link";
 import styles from "../../../../styles/slider.module.css";
-import stylesTwo from "../../../../styles/fs.module.css";
 
 
 
@@ -59,7 +58,7 @@ const Slider = () => {
   return (
     <div className={styles.home}>
       <div className={`${styles.overallContainer}`}>
-        <h1 className={`${styles.mainTitle} ${stylesTwo.redCustomFont}`}>mise en scène</h1>
+        <h1 className={`${styles.mainTitle} redCustomFont`}>mise en scène</h1>
         <div
           ref={itemsContainer}
           className={styles.itemContainer}

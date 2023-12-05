@@ -12,7 +12,7 @@ html {
 
 
 @font-face {
-  font-family: 'FONTSPRING DEMO - Integral CF Medium';
+  font-family: 'Integral CF Medium';
   src: url('/fonts/IntegralCF-Medium.otf') format('opentype');
   /* Adjust the font file format as needed */
   font-weight: normal;
@@ -20,7 +20,7 @@ html {
 }
 
 @font-face {
-  font-family: 'FONTSPRING DEMO - Integral CF Medium';
+  font-family: 'Integral CF Medium';
   src: url('/fonts/IntegralCF-Medium.otf') format('opentype');
   /* Adjust the font file format as needed */
   font-weight: bold;
@@ -28,7 +28,7 @@ html {
 }
 
 @font-face {
-  font-family: 'FONTSPRING DEMO - Integral CF Regular';
+  font-family: 'Integral CF Regular';
   src: url('/fonts/IntegralCF-Medium.otf') format('opentype');
   /* Adjust the font file format as needed */
   font-weight: normal;
@@ -57,7 +57,7 @@ html {
 }
 
 .customFont {
-  font-family: 'FONTSPRING DEMO - Integral CF Medium', sans-serif;
+  font-family: 'Integral CF Medium', sans-serif;
   -webkit-text-stroke: 1.5px white;
   /* Adjust the width and color of the stroke */
   color: transparent;
@@ -65,14 +65,14 @@ html {
 }
 
 .redCustomFont {
-  font-family: 'FONTSPRING DEMO - Integral CF Medium', sans-serif;
+  font-family: 'Integral CF Medium', sans-serif;
   -webkit-text-stroke: 1.5px #FF6000;
   /* Adjust the width and color of the stroke */
   color: transparent;
 }
 
 .subheadingFont {
-  font-family: 'FONTSPRING DEMO - Integral CF Medium', sans-serif;
+  font-family: 'Integral CF Medium', sans-serif;
   /* Adjust the width and color of the stroke */
 }
 
