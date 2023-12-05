@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <div className={styles.topPart}>
       <div className={styles.innerHeroSection}>
-        <h1 className={`${styles.mainTitle} ${stylesTwo.customFont}`}>dayzero</h1>
+        <h1 className={`${styles.mainTitle} customFont`}>dayzero</h1>
         <div className={styles.bottomContent}>
           <p className={styles.textBrief}>
             THIS TEXT WILL HOUSE AN INTRO TO THIS GAME’S STORY. BRIEF YET
