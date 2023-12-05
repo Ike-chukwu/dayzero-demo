@@ -58,15 +58,14 @@
 .aspect {
     font-size: 3rem;
     color: white;
-    font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
-    font-family: 'FONTSPRING DEMO - Integral CF';
+    font-family: 'Integral CF Regular';
 }
 
 .notActive {
     color: rgba(255, 255, 255, 0.40);
-    font-family: 'FONTSPRING DEMO - Integral CF';
+    font-family: 'Integral CF Regular';
 }
 
 
