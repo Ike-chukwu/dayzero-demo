@@ -123,12 +123,12 @@
     .route {
         font-size: 1.6rem;
         text-transform: uppercase;
-        font-weight: bold;
         padding-block: 2rem;
         border-top: .1rem solid lightgray;
         border-bottom: .1rem solid white;
         cursor: pointer;
         width: 100%;
+        font-family: 'Integral CF Regular';
     }
 
     .socials {
@@ -143,5 +143,6 @@
         font-size: 1.6rem;
         text-transform: uppercase;
         font-size: 1.4rem;
+        font-family: Neue Montreal;
     }
 }
