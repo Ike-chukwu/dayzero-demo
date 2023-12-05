@@ -2,12 +2,13 @@ import React from "react";
 import styles from "../../../../styles/layout.module.css";
 import Button from "../../Button/Button";
 import Navbar from "../../Navbar/Navbar";
+import stylesTwo from "../../../../styles/fs.module.css";
 
 const HeroSection = () => {
   return (
     <div className={styles.topPart}>
       <div className={styles.innerHeroSection}>
-        <h1 className={styles.mainTitle}>dayzero</h1>
+        <h1 className={`${styles.mainTitle} ${stylesTwo.customFont}`}>dayzero</h1>
         <div className={styles.bottomContent}>
           <p className={styles.textBrief}>
             THIS TEXT WILL HOUSE AN INTRO TO THIS GAME’S STORY. BRIEF YET

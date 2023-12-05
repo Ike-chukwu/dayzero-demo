@@ -61,10 +61,12 @@
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: 'FONTSPRING DEMO - Integral CF';
 }
 
 .notActive {
     color: rgba(255, 255, 255, 0.40);
+    font-family: 'FONTSPRING DEMO - Integral CF';
 }
 
 

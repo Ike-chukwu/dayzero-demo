@@ -4,8 +4,7 @@ import styles from "../../../../styles/market.module.css";
 const Market = () => {
   return (
     <div className={styles.marketParent}>
-      <hr className={styles.middleLine} />
-      <section className={styles.marketSection}>
+      <div className={styles.marketSection}>
         <div className={styles.leftMarketPlace}>
           <div className={styles.initialPart}>
             <img src="/blackarrow.png" className={styles.blackArrow} alt="" />
@@ -25,7 +24,7 @@ const Market = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <div className={styles.bottomSection}>
         <div className={styles.leftCategory}>
           <div className={styles.spanCover}>

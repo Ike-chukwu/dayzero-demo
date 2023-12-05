@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../../../styles/storySection.module.css";
+import stylesTwo from "../../../../styles/fs.module.css";
 
 const StorySection = () => {
   return (
@@ -21,7 +22,9 @@ const StorySection = () => {
         </div>
 
         <div className={styles.playSection}>
-          <h1 className={styles.mainTitle}>how to play</h1>
+          <h1 className={`${styles.mainTitle} ${stylesTwo.redCustomFont}`}>
+            how to play
+          </h1>
           <div className={styles.fullCharacterPack}>
             <div className={styles.leftCharacterPack}>
               <div className={styles.left}>
@@ -38,11 +41,7 @@ const StorySection = () => {
                 </p>
               </div>
             </div>
-            <div className={styles.leftCharacterPack}>
-              <div className={styles.left}>
-                <img src="/placeholder.png" className={styles.circle} alt="" />
-              </div>
-
+            <div className={styles.rightCharacterPack}>
               <div className={styles.textContent}>
                 <h3 className={styles.heading}>title here</h3>
                 <p className={styles.briefText}>
@@ -51,6 +50,9 @@ const StorySection = () => {
                   ipsa quae ab illo inventore veritatis et quasi architecto
                   beatae vitae dicta sunt explicabo.
                 </p>
+              </div>
+              <div className={styles.left}>
+                <img src="/placeholder.png" className={styles.circle} alt="" />
               </div>
             </div>
             <div className={styles.leftCharacterPack}>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import React from "react";
 import styles from "../../../styles/dropdown.module.css";
 
+
 const DropdownContent = (props) => {
   const [isDropDownActive, setDropdownActive] = useState(false);
 
@@ -41,7 +42,9 @@ const DropdownContent = (props) => {
             : `${styles.accodionAnswer}`
         }
       >
-        <p className={styles.accordionBrief}>{props.answer}</p>
+        <div className={styles.accordionBriefParent}>
+          <p className={styles.accordionBrief}>{props.answer}</p>
+        </div>
       </div>
     </div>
   );

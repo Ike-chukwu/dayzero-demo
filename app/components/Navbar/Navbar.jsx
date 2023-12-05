@@ -7,13 +7,11 @@ const Navbar = (props) => {
   const [isMenuActive, setMenuActive] = useState(false);
 
   useEffect(() => {
-    const html = document.querySelector("html")
-    if(html){
-      html.style.overflow = isMenuActive? "hidden" : "auto"
+    const html = document.querySelector("html");
+    if (html) {
+      html.style.overflow = isMenuActive ? "hidden" : "auto";
     }
-  }, [isMenuActive])
-
-
+  }, [isMenuActive]);
 
   return (
     <nav className={styles.navbar}>

@@ -1,8 +1,8 @@
 .accordianUnit {
     padding-block: 2rem;
     padding-inline: 2rem;
-    border-top: .1rem solid white;
-    border-bottom: .1rem solid white;
+    border-top: .1rem solid rgba(255, 255, 255, 0.50);
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.50);
     color: white;
 }
 
@@ -17,17 +17,20 @@
 .accordionTitle {
     font-size: 3rem;
     text-transform: capitalize;
+    font-family: Neue Montreal;
 }
 
 .accordionDate {
     font-size: 1.4rem;
     text-transform: capitalize;
     width: 15rem;
+    font-family: Neue Pixel Sans;
 }
 
 .coloredText {
     font-size: 1.4rem;
     text-transform: capitalize;
+    font-family: Neue Pixel Sans;
 }
 
 
@@ -46,16 +49,23 @@
     max-height: 0rem;
     overflow: hidden;
     transition: all 1.4s ease-in;
+    font-family: Neue Pixel Sans;
 }
 
 .active {
     max-height: 30rem;
 }
 
+.accordionBriefParent {
+    padding-top: 1.5rem;
+}
+
 .accordionBrief {
     font-size: 1.8rem;
     line-height: 1.5;
-    padding-top: 1.5rem;
+    border-top: .1rem solid rgba(255, 255, 255, 0.50);
+    padding-top: 1rem;
+    color: #A4A39E;
 }
 
 @media(max-width:1125px) {

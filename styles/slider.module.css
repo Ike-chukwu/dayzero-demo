@@ -9,13 +9,12 @@
 }
 
 .mainTitle {
-    font-size: 18.9rem;
+    font-size: 17.5rem;
     text-transform: capitalize;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
-    color: white;
 }
 
 .itemContainer {
@@ -35,7 +34,7 @@
 }
 
 .image {
-    width: 500px;
+    width: 435px;
     pointer-events: none;
     color: white;
     display: flex;
@@ -52,6 +51,8 @@
     font-size: 1.8rem;
     margin-block: 2rem;
     align-self: flex-end;
+    font-family: Neue Pixel Sans;
+    text-transform: uppercase;
 }
 
 
@@ -82,7 +83,7 @@
 
 
     .mainTitle {
-        font-size: 13.5rem;
+        font-size: 12.5rem;
     }
 
 
@@ -94,7 +95,7 @@
 @media(max-width:1125px) {
 
     .mainTitle {
-        font-size: 10.8rem;
+        font-size: 10rem;
     }
 
     .overallContainer {
@@ -115,7 +116,7 @@
 @media(max-width:855px) {
 
     .mainTitle {
-        font-size: 4rem;
+        font-size: 5.5rem;
         text-align: center;
     }
 

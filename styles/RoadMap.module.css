@@ -4,7 +4,7 @@
 
 .topSegment {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: .7rem;
 }
 
@@ -12,10 +12,12 @@
     font-size: 4rem;
     text-transform: uppercase;
     color: white;
+    font-family: 'FONTSPRING DEMO - Integral CF Medium';
 }
 
 .orangeArrow {
     width: 20px;
+    align-self: center;
 }
 
 .accordianPack {
@@ -41,12 +43,14 @@
 .accordionTitle {
     font-size: 3rem;
     text-transform: capitalize;
+    font-family: Neue Montreal;
 }
 
 .accordionDate,
 .accordionDate {
     font-size: 1.4rem;
     text-transform: capitalize;
+    font-family: Neue Pixel Sans;
 }
 
 .coloredText {
