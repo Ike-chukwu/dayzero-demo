@@ -97,3 +97,75 @@ export const environments = [
     img: "/env3.png",
   },
 ];
+
+export const flags = [
+  {
+    id: 0,
+    img: "/redFlag.png",
+  },
+  {
+    id: 1,
+    img: "/blueFlag.png",
+  },
+  {
+    id: 2,
+    img: "/yellowFlag.png",
+  },
+  {
+    id: 2,
+    img: "/lemonFlag.png",
+  },
+];
+
+
+export const lootBoxes = [
+  {
+    id: 0,
+    img: "/lootBox.png",
+    title: "loot box name",
+    description: "ARENA GOTTEN",
+  },
+  {
+    id: 1,
+    img: "/lootBox.png",
+    title: "loot box name",
+    description: "ARENA GOTTEN",
+  },
+  {
+    id: 2,
+    img: "/lootBox.png",
+    title: "loot box name",
+    description: "ARENA GOTTEN",
+  },
+  {
+    id: 2,
+    img: "/lootBox.png",
+    title: "loot box name",
+    description: "ARENA GOTTEN",
+  },
+];
+
+
+
+export const dashboardNav = [
+  {
+    id: 0,
+    name: "overview",
+    address: "/dashboard/overview",
+  },
+  {
+    id: 1,
+    name: "pve stats",
+    address: "/dashboard/pvestats",
+  },
+  {
+    id: 0,
+    name: "pvp stats",
+    address: "/dashboard/pvpstats",
+  },
+  {
+    id: 0,
+    name: "war events",
+    address: "/dashboard/warevents",
+  },
+];

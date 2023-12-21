@@ -29,7 +29,7 @@ const Navbar = (props) => {
           alt=""
         />
         <img
-          src="telegram.png"
+          src="/telegram.png"
           style={{ width: " 20px", height: " 20px" }}
           alt=""
         />
@@ -38,7 +38,7 @@ const Navbar = (props) => {
           style={{ width: " 0.5px", height: " 20px", background: "#FBEFC5" }}
           alt=""
         />
-        <img src="x.png" style={{ width: " 20px", height: " 20px" }} alt="" />
+        <img src="/x.png" style={{ width: " 20px", height: " 20px" }} alt="" />
       </div>
 
       <div className={styles.btnPack}>

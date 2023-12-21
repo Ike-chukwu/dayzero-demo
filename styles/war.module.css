@@ -1,0 +1,252 @@
+.warContainer {
+    padding-block: 3rem;
+    padding-left: 2rem;
+    /* flex: 1; */
+    border-left: .1rem solid rgba(255, 255, 255, 0.30);
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10rem;
+    color: white;
+    gap: 8rem;
+    width: 1200px;
+    min-height: 100vh;
+}
+
+.initialSection {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.recentMatchesHeadingPack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.heading {
+    color: #FFF;
+    font-family: 'Integral CF Medium';
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.chevronPack {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.navChev {
+    width: 30px;
+    height: 30px;
+}
+
+
+.carPack {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    position: relative;
+    width: 100%;
+}
+
+.eventCard {
+    padding-block: 2rem;
+    /* height: 298px; */
+    /* background: pink; */
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+    position: relative;
+    padding-block: 4rem;
+}
+
+.specialBorder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.titleOfEvent {
+    color: #FFF;
+    font-family: 'Integral CF Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.imgContainer {
+    width: 90%;
+    height: 195.224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 2rem;
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Neue Montreal;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: rgba(5, 41, 37, 0.50);
+}
+
+.lastText {
+    color: #A4A39E;
+    font-family: Neue Montreal;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.indicator {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%);
+}
+
+.lootSection {
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-block: 2rem;
+}
+
+.heading {
+    color: #FFF;
+    font-family: 'Integral CF Medium';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.lootBoxesPack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.lootBox {
+    width: 23%;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.box {
+    width: 100%;
+}
+
+.textPack {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+}
+
+.title {
+    color: #FFF;
+    font-family: 'Integral CF Medium';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.valueText {
+    color: #A4A39E;
+    font-family: 'Integral CF Medium';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+@media(max-width:1470px) {
+    .warContainer {
+        width: 800px;
+    }
+
+    .eventCard {
+        width: 31%;
+    }
+}
+
+
+@media(max-width:1125px) {
+    .warContainer {
+        width: 600px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .eventCard {
+        width: 31%;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .valueText {
+        font-size: 1.1rem;
+    }
+
+    .carPack {
+        display: none;
+    }
+
+    .lootSection {
+        display: none;
+    }
+}
+
+
+
+@media(max-width:855px) {
+    .warContainer {
+        padding-left: unset;
+        border-left: none;
+        width: 100%;
+    }
+
+    .chevronPack {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .navChev {
+        width: 25px;
+        height: 25px;
+    }
+    
+}

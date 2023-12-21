@@ -1,0 +1,330 @@
+.secondAspect {
+    padding-block: 3rem;
+    padding-left: 2rem;
+    /* flex: 1; */
+    border-left: .1rem solid rgba(255, 255, 255, 0.30);
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    color: white;
+    gap: 8rem;
+    width: 1200px;
+    min-height: 100vh;
+}
+
+.topMostContainerParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4.5rem;
+    width: 100%;
+}
+
+
+.topMostPart {
+    background-image: url(/dashboardImg.png);
+    background-color: linear-gradient(94deg, #090909 40.18%, rgba(9, 9, 9, 0.00) 56.18%, rgba(9, 9, 9, 0.00) 84.62%);
+    background-size: cover;
+    background-position: center;
+    padding-left: 6rem;
+    padding-block: 2rem;
+    width: 100%;
+}
+
+
+
+.topMostContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.mainTitle {
+    font-family: 'Integral CF Medium';
+    font-size: 6rem;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+.textBrief {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Neue Pixel Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 350px;
+}
+
+.btnPack {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn {
+    width: 120px;
+    height: 44px;
+    display: inline-block;
+    position: relative;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 92% 100%, 0 100%);
+    text-align: center;
+    font-family: Neue Pixel Sans;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:first-of-type {
+    color: black;
+    background: #FF3B00;
+    ;
+}
+
+.btn:nth-child(2) {
+    background: white;
+    color: black;
+}
+
+
+.levelCardContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.secondPart {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+}
+
+
+.innerSecondPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.promptBtn {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.plus {
+    width: 20px;
+}
+
+.heading {
+    color: #FFF;
+    font-family: 'Integral CF Medium';
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.playerCardContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+
+.flagPack {
+    width: 100%;
+    /* background: rebeccapurple; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.innerFlagContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flag {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flagImg {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media(max-width:1470px) {
+    .secondAspect {
+        width: 800px;
+    }
+
+    .levelCardContainer {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+    }
+
+    .playerCardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1.6rem;
+    }
+}
+
+
+/* /* @media(max-width:1125px) {
+
+    section {
+        width: 800px;
+    }
+} */
+
+@media(max-width:1125px) {
+    .secondAspect {
+        width: 600px;
+    }
+
+    .topMostContainerParent {
+        gap: 3.5rem;
+    }
+
+
+    .topMostPart {
+        padding-left: 3rem;
+        padding-block: 1rem;
+    }
+
+    .levelCardContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .promptBtn {
+        padding: 1rem 1rem;
+    }
+
+    .plus {
+        width: 15px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .innerFlagContent {
+        display: none;
+    }
+
+    /* .playerCardContainer {
+        grid-template-columns: repeat(1, 1fr);
+    } */
+
+}
+
+
+@media(max-width:855px) {
+    .secondAspect {
+        width: 100%;
+        border-left: none;
+        padding-left: unset;
+    }
+
+    .topMostPart {
+        padding-left: unset;
+    }
+
+    .mainTitle {
+        font-size: 4.8rem;
+    }
+
+
+    .textBrief {
+        width: 100%;
+    }
+
+    .btn {
+        padding: 1rem;
+        width: unset;
+        height: unset;
+        font-size: 1.4rem;
+    }
+
+
+    .levelCardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+@media(max-width:280px) {
+    .mainTitle {
+        font-size: 3.5rem;
+    }
+
+
+    .textBrief {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        padding: 1rem;
+        width: unset;
+        height: unset;
+        font-size: 1.4rem;
+    }
+
+
+    .levelCardContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+
+    .promptBtn {
+        padding: .5rem .5rem;
+        font-size: 1rem;
+    }
+
+    .plus {
+        width: 15px;
+    }
+
+
+}

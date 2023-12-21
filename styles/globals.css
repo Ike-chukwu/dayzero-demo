@@ -69,7 +69,7 @@ html {
   -webkit-text-stroke: 1.5px #FF6000;
   /* Adjust the width and color of the stroke */
   color: #1c0b00;
-  
+
 }
 
 .subheadingFont {
@@ -97,6 +97,7 @@ section {
   }
 }
 
+
 @media(max-width:855px) {
 
   body,
@@ -112,5 +113,11 @@ section {
     width: 100%;
     padding-inline: 2rem;
     padding-block: 3rem;
+  }
+}
+
+@media(max-width:280px) {
+  section {
+    padding-inline: 1rem;
   }
 }

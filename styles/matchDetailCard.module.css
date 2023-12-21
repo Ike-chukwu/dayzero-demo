@@ -1,0 +1,113 @@
+.detailCard {
+    width: 32%;
+    padding: 1rem 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 0.3px solid #3D3D3F;
+    background: #1C1C1F;
+    border-right: .4rem solid #00B055;
+}
+
+.leftArea {
+    display: flex;
+    gap: 1.8rem;
+}
+
+.lImg {
+    width: 39px;
+    height: 61px;
+}
+
+.topArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.smallTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+}
+
+.smallText {
+    color: #FFF;
+    font-family: 'Integral CF Medium';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.time {
+    color: #00B055;
+    font-family: 'Integral CF Medium';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.red {
+    color: #C72F3A;
+    font-family: 'Integral CF Medium';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.eventDetails {
+    color: #A4A39E;
+    font-family: Neue Montreal;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.rightArea {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+}
+
+
+.topArea {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.smallText {
+    color: #A4A39E;
+    font-family: 'Integral CF Medium';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.time {
+    color: #FFF;
+    font-family: 'Integral CF Medium';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+@media(max-width:1125px) {
+    .detailCard {
+        width: 100%;
+    }
+}

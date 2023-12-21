@@ -1,0 +1,239 @@
+.pveParent {
+    padding-block: 3rem;
+    padding-left: 2rem;
+    /* flex: 1; */
+    border-left: .1rem solid rgba(255, 255, 255, 0.30);
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
+    color: white;
+    gap: 8rem;
+    width: 1200px;
+    min-height: 100vh;
+}
+
+.matchCardPack {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.matchCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 32%;
+    padding-block: 10rem;
+}
+
+.matchCard:first-of-type {
+    border: 0.5px solid #4CABFF;
+    background: rgba(19, 33, 46, 0.50)
+}
+
+.matchCard:nth-of-type(2) {
+    border: 0.5px solid #00B055;
+    background: rgba(5, 41, 37, 0.50);
+}
+
+.matchCard:nth-of-type(3) {
+    border: 0.5px solid #C72F3A;
+    background: rgba(50, 31, 39, 0.50);
+}
+
+.chev {
+    width: 64px;
+    height: 64px;
+}
+
+.cardContent {
+    color: #FFF;
+    font-family: 'Integral CF Medium';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+
+.recentMatchesParent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.recentMatchesHeadingPack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.heading {
+    color: #FFF;
+    font-family: 'Integral CF Medium';
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.chevronPack {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.navChev {
+    width: 30px;
+    height: 30px;
+}
+
+.detailsPack {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    position: relative;
+}
+
+.indicator {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%);
+}
+
+
+.lootSection {
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.heading {
+    color: #FFF;
+    font-family: 'Integral CF Medium';
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.lootBoxesPack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.lootBox {
+    width: 23%;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.box {
+    width: 100%;
+}
+
+.textPack {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+}
+
+.title {
+    color: #FFF;
+    font-family: 'Integral CF Medium';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.valueText {
+    color: #A4A39E;
+    font-family: 'Integral CF Medium';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media(max-width:1470px) {
+    .pveParent {
+        width: 1000px;
+    }
+}
+
+
+@media(max-width:1125px) {
+    .pveParent {
+        width: 600px;
+    }
+
+    .matchCardPack {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .matchCard {
+        width: 100%;
+    }
+
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .lootSection {
+        display: none;
+    }
+
+    .chevronPack {
+        gap: 1.5rem;
+    }
+
+    .navChev {
+        width: 25px;
+        height: 25px;
+    }
+
+    .detailsPack {
+        flex-direction: column;
+    }
+
+    .indicator {
+        bottom: -5%;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+}
+
+
+@media(max-width:855px) {
+    .pveParent {
+        padding-left: unset;
+        border-left: none;
+        width: 100%;
+    }
+
+}

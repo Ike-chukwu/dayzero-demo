@@ -1,0 +1,89 @@
+.levelCard {
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+    /* background: red; */
+    /* background: #1C1C1C; */
+}
+
+.levelCard:nth-of-type(2),
+.levelCard:nth-of-type(3),
+.levelCard:nth-of-type(4),
+.levelCard:nth-of-type(5),
+.levelCard:nth-of-type(7),
+.levelCard:nth-of-type(8),
+.levelCard:nth-of-type(9),
+.levelCard:nth-of-type(10) {
+    justify-content: flex-end;
+}
+
+/* .levelCard:nth-of-type(5),
+.levelCard:nth-of-type(10){
+   justify-content: flex-end;
+} */
+
+.icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-transform: capitalize;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+
+.levelDetails {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+    width: 100px;
+}
+
+.context {
+    color: #A4A39E;
+    font-family: 'Integral CF Medium';
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+.level {
+    color: #FFF;
+    font-family: Neue Pixel Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+@media(max-width:1470px) {
+
+    .levelCard:nth-of-type(2),
+    .levelCard:nth-of-type(3),
+    .levelCard:nth-of-type(4),
+    .levelCard:nth-of-type(5),
+    .levelCard:nth-of-type(7),
+    .levelCard:nth-of-type(8),
+    .levelCard:nth-of-type(9),
+    .levelCard:nth-of-type(10) {
+        justify-content: flex-start;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+
+    .level {
+        font-size: 1.4rem;
+    }
+}
