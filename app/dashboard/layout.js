@@ -38,9 +38,10 @@ export default function DashboardLayout({ children }) {
         <section className={styles.dashboardContainer}>
           <nav className={styles.navContainer}>
             <div className={styles.innerNav}>
-              {dashboardNav.map((link) => {
+              {dashboardNav.map((link, index) => {
                 return (
                   <button
+                    key={index}
                     className={
                       pathname === link.address
                         ? `${styles.link} ${styles.activeLink}`
