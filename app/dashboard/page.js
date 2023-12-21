@@ -105,7 +105,7 @@ const Overview = () => {
         <div className={styles.innerSecondPart}>
           <h3 className={styles.heading}>my cards</h3>
           <button className={styles.promptBtn}>
-            <img className={styles.plus} src="/plus.png" alt="" /> BUY NEW FLAGS
+            <img className={styles.plus} src="/plus.png" alt="" /> BUY NEW CARDS
           </button>
         </div>
         <div className={styles.playerCardContainer}>

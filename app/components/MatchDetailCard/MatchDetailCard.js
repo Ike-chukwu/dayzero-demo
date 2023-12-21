@@ -21,7 +21,7 @@ const MatchDetailCard = () => {
           <p className={styles.smallText}>K / D / A</p>
           <p className={styles.time}>23 / 12 / 4</p>
         </div>
-        <img src="/Rimg.png" className={styles.lImg} alt="" />
+        <img src="/RImg.png" className={styles.lImg} alt="" />
       </div>
     </div>
   );
