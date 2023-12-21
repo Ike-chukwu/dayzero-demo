@@ -132,6 +132,7 @@
     align-items: center;
     gap: .5rem;
     color: #000000;
+    border: none;
 }
 
 .plus {
