@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "../../../styles/overview.module.css";
+import styles from "../../styles/overview.module.css";
 import LevelCard from "@/app/components/LevelCard/LevelCard";
 import PlayerCard from "@/app/components/PlayerCard/PlayerCard";
 import FlagSlider from "@/app/components/FlagSlider/FlagSlider";

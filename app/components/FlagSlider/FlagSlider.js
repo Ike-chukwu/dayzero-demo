@@ -3,7 +3,7 @@ import styles from "../../../styles/flagSlider.module.css";
 import { useState, useEffect, useRef } from "react";
 import { flags } from "../../constants";
 
-const flagSlider = (props) => {
+const FlagSlider = (props) => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeftState, setScrollLeftState] = useState(0);
@@ -81,4 +81,4 @@ const flagSlider = (props) => {
   );
 };
 
-export default flagSlider;
+export default FlagSlider;

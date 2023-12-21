@@ -117,7 +117,6 @@ export const flags = [
   },
 ];
 
-
 export const lootBoxes = [
   {
     id: 0,
@@ -145,13 +144,11 @@ export const lootBoxes = [
   },
 ];
 
-
-
 export const dashboardNav = [
   {
     id: 0,
     name: "overview",
-    address: "/dashboard/overview",
+    address: "/dashboard",
   },
   {
     id: 1,
