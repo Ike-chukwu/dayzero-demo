@@ -1,0 +1,351 @@
+.warCard {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #3D3D3F;
+    background: #1C1C1F;
+    padding-inline: 2rem;
+}
+
+.firstPart {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.userImg {
+    width: 68px;
+}
+
+.innerFirstPart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.userName {
+    color: #F2F4F7;
+    font-family: 'Integral CF Medium';
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.serial {
+    color: #F2F4F7;
+    font-family: Neue Pixel Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.level {
+    color: #F2F4F7;
+    font-family: Neue Pixel Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mInnerFirstPart {
+    display: none;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.middlePortion {
+    width: 20%;
+}
+
+.category:nth-of-type(2) {
+    display: none;
+}
+
+.categpry {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+}
+
+.categoryTitle {
+    color: #A4A39E;
+    font-family: Neue Montreal;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.number {
+    color: #F2F4F7;
+    font-family: 'Integral CF Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.win {
+    color: #00B055;
+    font-family: 'Integral CF Medium';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.lastPart {
+    display: flex;
+    gap: 5rem;
+    align-items: flex-start;
+}
+
+.badge {
+    width: 49.086px;
+    margin-top: -2.2rem;
+}
+
+
+@media(max-width:1470px) {
+
+    .warCard {
+        padding-inline: 1.2rem;
+    }
+
+    .userImg {
+        width: 50px;
+    }
+
+    .playerStats {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .middlePortion {
+        width: 30%;
+    }
+
+    .userName {
+        font-size: 1.6rem;
+    }
+
+    .serial {
+        font-size: 1.6rem;
+        margin-left: .5rem;
+    }
+
+    .level {
+        font-size: 1.4rem;
+    }
+
+    .categoryTitle {
+        font-size: 1rem;
+    }
+
+    .number {
+        font-size: 1.4rem;
+    }
+
+    .win {
+        font-size: 1.4rem;
+    }
+
+    .badge {
+        width: 30px;
+        margin-top: -2.2rem;
+    }
+}
+
+
+@media(max-width:1125px) {
+    .firstPart {
+        display: flex;
+        gap: 1.2rem;
+    }
+
+    .warCard {
+        padding-inline: 1rem;
+    }
+
+    .userImg {
+        width: 30px;
+    }
+
+    .userName {
+        font-size: 1.2rem;
+    }
+
+    .middlePortion {
+        width: 35%;
+    }
+
+    .serial {
+        font-size: 1.2rem;
+        margin-left: .3rem;
+    }
+
+    .level {
+        font-size: 1.2rem;
+    }
+
+    .categoryTitle {
+        font-size: .9rem;
+    }
+
+    .number,
+    .win {
+        font-size: 1.2rem;
+    }
+
+    .lastPart {
+        display: flex;
+        gap: 4rem;
+        align-items: flex-start;
+    }
+
+    .badge {
+        width: 20px;
+        margin-top: -1.4rem;
+    }
+}
+
+
+@media(max-width:855px) {
+
+    .warCard {
+        padding: 2rem;
+        align-items: flex-start;
+    }
+
+    .firstPart {
+        display: flex;
+        gap: 1.2rem;
+        padding-top: unset;
+    }
+
+    .innerFirtsPart {
+        display: none;
+    }
+
+    .mInnerFirstPart {
+        display: flex;
+    }
+
+    .userImg {
+        width: 60px;
+    }
+
+    .userName {
+        font-size: 1.8rem;
+    }
+
+    .middlePortion {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .serial {
+        font-size: 1.8rem;
+        margin-left: .5rem;
+    }
+
+    .level {
+        font-size: 1.6rem;
+    }
+
+    .playerStats {
+        flex-direction: column;
+    }
+
+    .category {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .category:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .categoryTitle {
+        font-size: 1.1rem;
+    }
+
+
+    .win {
+        font-size: 1.8rem;
+    }
+
+    .number {
+        font-size: 1.4rem;
+    }
+
+    .lastPart .categpry {
+        display: none;
+    }
+
+
+    .badge {
+        width: 40px;
+        margin-top: -2rem;
+    }
+}
+
+
+@media(max-width:464px) {
+
+    .warCard {
+        padding: 1rem;
+    }
+
+    .userImg {
+        width: 45px;
+    }
+
+    .userName {
+        font-size: 1.4rem;
+    }
+
+    .serial {
+        font-size: 1.4rem;
+        margin-left: .5rem;
+    }
+
+    .level {
+        font-size: 1.6rem;
+    }
+
+    .middlePortion {
+        width: 50%;
+    }
+
+    .categoryTitle {
+        font-size: 1.2rem;
+    }
+
+    .win {
+        font-size: 1.4rem;
+    }
+
+    .number {
+        font-size: 1.1rem;
+    }
+
+    .badge {
+        width: 40px;
+        margin-top: -1rem;
+    }
+}

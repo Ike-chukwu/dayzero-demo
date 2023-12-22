@@ -180,11 +180,15 @@
 }
 
 
-@media(max-width:1125px) {
+@media(max-width:855px) {
 
     .leftSide {
         width: 60%;
         /* gap: 3rem; */
+    }
+
+    .gameStats {
+        gap: 3rem;
     }
 
 }

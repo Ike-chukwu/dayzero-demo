@@ -7,7 +7,7 @@ import { pvpUsers } from "../../constants";
 import { warUsers } from "../../constants";
 import WarEventUserCard from "@/app/components/WarEventUserCard/WarEventUserCard";
 
-const page = () => {
+const page = (props) => {
   const [currentLoc, setCurrentLoc] = useState("pvp multiplayer");
   const aspects = ["pvp multiplayer", "war event"];
 
@@ -53,7 +53,18 @@ const page = () => {
                   level={user.level}
                 />
               ))
-            : warUsers.map((user) => <WarEventUserCard />)}
+            : warUsers.map((user) => (
+                <WarEventUserCard
+                  key={user.id}
+                  name={user.name}
+                  level={user.level}
+                  userPic={user.userPic}
+                  serial={user.serial}
+                  tw={user.tW}
+                  events={user.events}
+                  badge={user.badge}
+                />
+              ))}
         </div>
       </div>
     </div>

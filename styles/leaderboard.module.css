@@ -20,7 +20,7 @@
     background-repeat: no-repeat;
     width: 100%;
     padding-block: 7.5rem;
-    padding-left: 3rem;
+    padding-left: 6rem;
 }
 
 .leaderTitle {
@@ -66,6 +66,7 @@
 
 .activeLink {
     border-bottom: .4rem solid #FF3B00;
+    color: #FF3B00;
 }
 
 
@@ -82,6 +83,10 @@
     .leaderboardContainer {
         padding-left: 2.5rem;
         width: 800px;
+    }
+
+    .topSection {
+        padding-left: 3rem;
     }
 
     .aspects {
@@ -103,7 +108,7 @@
     }
 
     .aspects {
-        width: 48%;
+        width: 46.5%;
     }
 
     .link {
@@ -114,7 +119,6 @@
 
 
 @media(max-width:855px) {
-
     .leaderboardContainer {
         width: 100%;
         border-left: none;
