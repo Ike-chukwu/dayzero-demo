@@ -49,6 +49,7 @@
     height: 20px;
     position: absolute;
     left: -7.5%;
+    top: 25%;
     border: 0.5px solid #FF3B00;
     transform: rotate(45deg);
     background: #401202;
@@ -57,7 +58,7 @@
 .address {
     text-decoration: none;
     font-family: 'Integral CF Medium';
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #FFF;
     font-style: normal;
     font-weight: 400;

@@ -20,7 +20,6 @@ const page = () => {
           <p className={styles.cardContent}>135 total matches</p>
         </div>
       </div>
-
       <div className={styles.recentMatchesParent}>
         <div className={styles.recentMatchesHeadingPack}>
           <h3 className={styles.heading}>recent matches</h3>
