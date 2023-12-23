@@ -3,9 +3,11 @@ import React, { useState, useEffect } from "react";
 import styles from "../../../styles/Navbar.module.css";
 import Button from "../Button/Button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = (props) => {
   const [isMenuActive, setMenuActive] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const html = document.querySelector("html");
@@ -86,6 +88,10 @@ const Navbar = (props) => {
           <Link
             className={styles.route}
             href="/dashboard"
+            style={{
+              textDecoration: "none",
+              color: pathname == "/dashboard" ? "#FF3B00" : "white",
+            }}
             onClick={() => {
               setMenuActive(false);
             }}
@@ -95,6 +101,10 @@ const Navbar = (props) => {
           <Link
             className={styles.route}
             href="/dashboard/pvestats"
+            style={{
+              textDecoration: "none",
+              color: pathname == "/dashboard/pv3stats" ? "#FF3B00" : "white",
+            }}
             onClick={() => {
               setMenuActive(false);
             }}
@@ -103,7 +113,11 @@ const Navbar = (props) => {
           </Link>
           <Link
             className={styles.route}
-            href="/dashboard/pvestats"
+            href="/dashboard/pvpstats"
+            style={{
+              textDecoration: "none",
+              color: pathname == "/dashboard/pvpstats" ? "#FF3B00" : "white",
+            }}
             onClick={() => {
               setMenuActive(false);
             }}
@@ -112,6 +126,10 @@ const Navbar = (props) => {
           </Link>
           <Link
             className={styles.route}
+            style={{
+              textDecoration: "none",
+              color: pathname == "/dashboard/warevents" ? "#FF3B00" : "white",
+            }}
             href="/dashboard/warevents"
             onClick={() => {
               setMenuActive(false);
@@ -120,6 +138,10 @@ const Navbar = (props) => {
             war events
           </Link>
           <Link
+            style={{
+              textDecoration: "none",
+              color: pathname == "/dashboard/leaderboard" ? "#FF3B00" : "white",
+            }}
             className={styles.route}
             href="/dashboard/leaderboard"
             onClick={() => {
