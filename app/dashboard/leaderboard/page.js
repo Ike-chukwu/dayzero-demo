@@ -72,4 +72,4 @@ const Page = (props) => {
   );
 };
 
-export default page;
+export default Page;

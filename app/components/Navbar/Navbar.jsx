@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../../styles/Navbar.module.css";
 import Button from "../Button/Button";
+import Link from "next/link";
 
 const Navbar = (props) => {
   const [isMenuActive, setMenuActive] = useState(false);
@@ -82,6 +83,51 @@ const Navbar = (props) => {
           >
             my account
           </p>
+          <Link
+            className={styles.route}
+            href="/dashboard"
+            onClick={() => {
+              setMenuActive(false);
+            }}
+          >
+            overview
+          </Link>
+          <Link
+            className={styles.route}
+            href="/dashboard/pvestats"
+            onClick={() => {
+              setMenuActive(false);
+            }}
+          >
+            pve stats
+          </Link>
+          <Link
+            className={styles.route}
+            href="/dashboard/pvestats"
+            onClick={() => {
+              setMenuActive(false);
+            }}
+          >
+            pvp stats
+          </Link>
+          <Link
+            className={styles.route}
+            href="/dashboard/warevents"
+            onClick={() => {
+              setMenuActive(false);
+            }}
+          >
+            war events
+          </Link>
+          <Link
+            className={styles.route}
+            href="/dashboard/leaderboard"
+            onClick={() => {
+              setMenuActive(false);
+            }}
+          >
+            leaderboard
+          </Link>
           <p className={styles.route}>marketplace</p>
         </div>
 
