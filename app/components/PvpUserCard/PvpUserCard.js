@@ -23,8 +23,8 @@ const PvpUserCard = (props) => {
           <p className={styles.level}>level {props.level}</p>
         </div>
         <div className={styles.deskDiamondPack}>
-          {props.dList.map((src) => (
-            <img src={src} className={styles.dBadge} alt="" />
+          {props.dList.map((src, index) => (
+            <img src={src} key={index} className={styles.dBadge} alt="" />
           ))}
         </div>
         <div className={styles.playerStats}>
@@ -42,8 +42,8 @@ const PvpUserCard = (props) => {
           </div>
         </div>
         <div className={styles.mobileDiamondPack}>
-          {props.dList.map((src) => (
-            <img src={src} className={styles.dBadge} alt="" />
+          {props.dList.map((src, index) => (
+            <img src={src} key={index} className={styles.dBadge} alt="" />
           ))}
         </div>
       </div>
