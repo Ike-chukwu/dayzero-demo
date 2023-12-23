@@ -7,7 +7,7 @@ import { pvpUsers } from "../../constants";
 import { warUsers } from "../../constants";
 import WarEventUserCard from "@/app/components/WarEventUserCard/WarEventUserCard";
 
-const page = (props) => {
+const Page = (props) => {
   const [currentLoc, setCurrentLoc] = useState("pvp multiplayer");
   const aspects = ["pvp multiplayer", "war event"];
 
@@ -18,9 +18,10 @@ const page = (props) => {
       </div>
       <div className={styles.aspectsContainer}>
         <div className={styles.aspects}>
-          {aspects.map((aspect) => {
+          {aspects.map((aspect, index) => {
             return (
               <div
+                key={index}
                 className={
                   currentLoc == aspect
                     ? `${styles.link} ${styles.activeLink}`
