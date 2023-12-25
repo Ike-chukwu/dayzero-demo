@@ -24,7 +24,7 @@ const page = () => {
 
       <div className={styles.recentMatchesParent}>
         <div className={styles.recentMatchesHeadingPack}>
-          <h3 className={styles.heading}>my flags</h3>
+          <h3 className={styles.heading}>recent matches</h3>
           <div className={styles.chevronPack}>
             <img src="/chevron-left.png" className={styles.navChev} alt="" />
             <img src="/chevron-right.png" className={styles.navChev} alt="" />

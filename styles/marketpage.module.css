@@ -1,0 +1,307 @@
+.marketPlaceParent {
+    position: relative;
+    padding-top: 10rem;
+    z-index: 1;
+    background-color: #090909;
+    color: white;
+}
+
+
+.innerMarketPlace {
+    border-top: .1rem solid rgba(255, 255, 255, 0.30);
+}
+
+.marketPlaceContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    align-items: flex-start;
+}
+
+.marketPlaceImageCarrier {
+    width: 100%;
+}
+
+.marketImg,
+.marketImgMobile {
+    width: 100%;
+    object-fit: cover;
+}
+
+.marketImgMobile {
+    display: none;
+}
+
+.nftStatsParent {
+    width: 100%;
+
+}
+
+.nftStatsSubParent {
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+    border: 1px solid #3D3D3F;
+    background: #1C1C1F;
+    width: 100%;
+    padding-block: 2rem;
+}
+
+
+.nftStatCategories {
+    border-bottom: 1px solid #3D3D3F;
+}
+
+.nftInnerStatCategories {
+    padding-inline: 2rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 2.4rem;
+}
+
+.stat {
+    color: #8C8583;
+    font-family: 'Integral CF Regular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+}
+
+.activeStat {
+    color: #FF3B00;
+    border-bottom: .4rem solid #FF3B00;
+}
+
+.statsInfo {
+    padding-inline: 2rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.line {
+    height: 78px;
+}
+
+.info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.img {
+    width: 60px;
+    height: 60px;
+}
+
+.topText {
+    color: #A4A39E;
+    font-family: Neue Montreal;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.num {
+    color: #F2F4F7;
+    font-family: 'Integral CF Regular';
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nftCardsCoontainer {
+    width: 100%;
+}
+
+.innerSecondPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.heading {
+    color: #FFF;
+    font-family: 'Integral CF Medium';
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.promptBtn {
+    padding: 1rem 2rem;
+    border: none;
+    color: #000;
+    font-family: Neue Pixel Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.mainNftCardContainer {
+    padding-block: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.chevronPack {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navChev {
+    width: 25px;
+    height: 25px;
+}
+
+
+@media(max-width:1470px) {
+    .img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .topText {
+        font-size: 1.4rem;
+    }
+
+    .num {
+        font-size: 2rem;
+    }
+}
+
+
+@media(max-width:1125px) {
+    .mainNftCardContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .topText {
+        font-size: 1.2rem;
+    }
+
+    .num {
+        font-size: 1.7rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+
+@media(max-width:855px) {
+
+    .marketImgMobile {
+        display: unset;
+    }
+
+    .marketImg {
+        display: none;
+    }
+
+    .marketPlaceContainer {
+        padding-inline: unset;
+        gap: 4rem;
+    }
+
+    .nftStatsSubParent {
+        border: unset;
+        background: unset;
+        width: 100%;
+    }
+
+    .nftInnerStatCategories {
+        gap: 2rem;
+    }
+
+    .stat {
+        font-size: 12px;
+    }
+
+    .statsInfoContainer {
+        padding-inline: 2rem;
+    }
+
+    .statsInfo {
+        flex-direction: column;
+        align-items: flex-start;
+        background: #1C1C1F;
+        border: 1px solid #3D3D3F;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .info {
+        border-bottom: 0.5px solid #3D3D3F;
+        padding-block: 2rem;
+        width: 100%;
+    }
+
+    .info:nth-of-type(3) {
+        border-bottom: none;
+    }
+
+    .nftCardsCoontainer {
+        padding-inline: 2rem;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .promptBtn {
+        padding: 1rem 1.5rem;
+        font-size: 12px;
+    }
+
+    .mainNftCardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media(max-width:480px) {
+    .mainNftCardContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media(max-width:280px) {
+
+    .topText {
+        font-size: 1rem;
+    }
+
+    .num {
+        font-size: 1.3rem;
+    }
+
+    .heading {
+        font-size: 1.4rem;
+    }
+
+    .promptBtn {
+        padding: 1rem;
+        font-size: 10px;
+    }
+
+}
