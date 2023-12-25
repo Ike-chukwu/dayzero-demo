@@ -1,9 +1,8 @@
-.marketPlaceParent {
+.marketPlaceParentTwo {
     position: relative;
     padding-top: 10rem;
     z-index: 1;
     background-color: #090909;
-    color: white;
 }
 
 
@@ -205,9 +204,16 @@
 
 
 @media(max-width:855px) {
+    .marketPlaceParent {
+        padding-top: 8rem;
+    }
 
     .marketImgMobile {
         display: unset;
+    }
+
+    .innerMarketPlace{
+        border-top: none;
     }
 
     .marketImg {

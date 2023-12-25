@@ -1,10 +1,32 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import styles from "../../styles/marketpage.module.css";
 import NftCard from "../components/NftCard/NftCard";
+import Market from "../components/Sections/Market/Market";
 
-const page = () => {
+const Page = () => {
+  const [showFooter, setShowFooter] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Set the condition based on the screen size where you want to show the footer
+      setShowFooter(window.innerWidth <= 855); // Show footer when screen size is 855px and below
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Initial check on component mount
+    handleResize();
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className={styles.marketPlaceParent}>
+    <div className={styles.marketPlaceParentTwo}>
       <div className={styles.innerMarketPlace}>
         <section className={styles.marketPlaceContainer}>
           <div className={styles.marketPlaceImageCarrier}>
@@ -185,9 +207,10 @@ const page = () => {
             </div>
           </div>
         </section>
+        {showFooter && <Market />}
       </div>
     </div>
   );
 };
 
-export default page;
+export default Page;
