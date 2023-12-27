@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../../styles/marketpage.module.css";
 import NftCard from "../components/NftCard/NftCard";
 import Market from "../components/Sections/Market/Market";
+import Link from "next/link";
 
 const Page = () => {
   const [showFooter, setShowFooter] = useState(false);
@@ -24,6 +25,8 @@ const Page = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const newCards = [11, 2, 3, 4, 5, 6, 7, 8];
 
   return (
     <div className={styles.marketPlaceParentTwo}>
@@ -85,14 +88,18 @@ const Page = () => {
               <button className={styles.promptBtn}>see all listing</button>
             </div>
             <div className={styles.mainNftCardContainer}>
-              <NftCard
-                imgSrc="/ilus.png"
-                name="card one"
-                category="character"
-                color="#FFEF8F"
-                borderColor="0.1px solid #FFEF8F"
-                bgColor=" rgba(255, 239, 143, 0.20)"
-              />
+              {/* {newCards.map((slug) => ( */}
+              <Link href={`/marketplace/${encodeURIComponent(1)}`}>
+                <NftCard
+                  imgSrc="/ilus.png"
+                  name="card one"
+                  category="character"
+                  color="#FFEF8F"
+                  borderColor="0.1px solid #FFEF8F"
+                  bgColor=" rgba(255, 239, 143, 0.20)"
+                />
+              </Link>
+              {/* ))} */}
               <NftCard
                 imgSrc="/ilus.png"
                 name="card one"

@@ -19,7 +19,7 @@ const Navbar = (props) => {
   return (
     <nav className={styles.navbar}>
       <img className={styles.orgLogo} src="/logo.png" alt="" />
-      {pathname === "/marketplace" ? (
+      {pathname.includes("/marketplace") ? (
         <div className={styles.extraMiddleLink}>
           <Link
             style={{
@@ -208,20 +208,23 @@ const Navbar = (props) => {
               >
                 leaderboard
               </Link>
-              <Link
-                style={{
-                  textDecoration: "none",
-                  color: pathname == "/marketplace" ? "#FF3B00" : "white",
-                }}
-                className={styles.route}
-                href="/marketplace"
-                onClick={() => {
-                  setMenuActive(false);
-                }}
-              >
-                marketplace
-              </Link>
             </>
+          )}
+          {pathname.includes("/dashboard") ||
+          pathname.includes("/marketplace") ? null : (
+            <Link
+              style={{
+                textDecoration: "none",
+                color: pathname == "/marketplace" ? "#FF3B00" : "white",
+              }}
+              className={styles.route}
+              href="/marketplace"
+              onClick={() => {
+                setMenuActive(false);
+              }}
+            >
+              marketplace
+            </Link>
           )}
           {pathname.includes("/marketplace") && (
             <>
