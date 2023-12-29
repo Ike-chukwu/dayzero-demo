@@ -1,0 +1,114 @@
+.buyParent {
+    background-color: #090909;
+    padding-top: 10rem;
+}
+
+.innerBuyParent {
+    border-top: .2rem solid rgba(255, 255, 255, 0.30);
+}
+
+.buyContainer {
+    padding-block: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.filterPack {
+    width: 200px;
+    padding-block: 3rem;
+    padding-right: 2rem;
+    /* height: 100vh; */
+}
+
+.filterHeadings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    color: #FFF;
+    font-family: Neue Montreal;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.clearPrompt {
+    color: #FFEF8F;
+    font-family: Neue Montreal;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.innerFilterPack {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+
+.cardPack {
+    padding-block: 3rem;
+    padding-left: 4.7rem;
+    border-left: .1rem solid rgba(255, 255, 255, 0.30);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.5rem;
+    width: 1200px;
+    min-height: 100vh;
+}
+
+
+
+@media(max-width:1470px) {
+    .cardPack {
+        width: 1000px;
+    }
+
+
+}
+
+
+@media(max-width:1125px) {
+    .cardPack {
+        width: 600px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media(max-width:855px) {
+    .innerBuyParent {
+        border-top: unset;
+    }
+
+    .buyContainer {
+        flex-direction: column;
+    }
+
+    .filterPack {
+        display: none;
+    }
+
+    .cardPack {
+        padding-left: unset;
+        border-left: none;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media(max-width:490px) {
+    .cardPack {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

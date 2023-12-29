@@ -172,7 +172,6 @@ export const dashboardNav = [
   },
 ];
 
-
 export const pvpUsers = [
   {
     id: 0,
@@ -278,7 +277,6 @@ export const pvpUsers = [
   },
 ];
 
-
 export const warUsers = [
   {
     id: 0,
@@ -363,5 +361,25 @@ export const warUsers = [
     serial: 9,
     tW: 10,
     events: "GOJ 24’, DYZERO, BULL’24",
+  },
+];
+
+export const filterOptions = [
+  { title: "type", aspects: ["card", "flag"] },
+  {
+    title: "card type",
+    aspects: ["character card", "battleitem card", "upgrade card"],
+  },
+  {
+    title: "rarity",
+    aspects: ["common", "epic", "legendary"],
+  },
+  {
+    title: "skin rarity",
+    aspects: ["normal", "rare", "mythical"],
+  },
+  {
+    title: "class",
+    aspects: ["option 1", "option 2", "option 3"],
   },
 ];

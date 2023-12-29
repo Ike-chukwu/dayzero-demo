@@ -211,13 +211,6 @@
 }
 
 
-/* /* @media(max-width:1125px) {
-
-    section {
-        width: 800px;
-    }
-} */
-
 @media(max-width:1125px) {
     .secondAspect {
         width: 600px;
@@ -252,10 +245,6 @@
     .innerFlagContent {
         display: none;
     }
-
-    /* .playerCardContainer {
-        grid-template-columns: repeat(1, 1fr);
-    } */
 
 }
 
