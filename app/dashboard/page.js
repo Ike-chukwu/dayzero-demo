@@ -4,9 +4,9 @@ import styles from "../../styles/overview.module.css";
 import LevelCard from "@/app/components/LevelCard/LevelCard";
 import PlayerCard from "@/app/components/PlayerCard/PlayerCard";
 import FlagSlider from "@/app/components/FlagSlider/FlagSlider";
+import Link from "next/link";
 
 const Overview = () => {
-  
   const levels = [
     {
       id: 0,
@@ -85,7 +85,14 @@ const Overview = () => {
             </p>
             <div className={styles.btnPack}>
               <button className={styles.btn}>play now</button>
-              <button className={styles.btn}>marketplace</button>
+              <button className={styles.btn}>
+                <Link
+                  href="/marketplace"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  marketplace
+                </Link>
+              </button>
             </div>
           </div>
         </div>

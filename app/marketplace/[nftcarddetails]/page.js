@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../../styles/nftcarddetails.module.css";
 import Market from "@/app/components/Sections/Market/Market";
+import Link from "next/link";
 
 const Page = () => {
   const [showFooter, setShowFooter] = useState(false);
@@ -27,7 +28,9 @@ const Page = () => {
   return (
     <div className={styles.detailContainer}>
       <section className={styles.detailWrapper}>
-        <img src="/chevron-left.png" className={styles.navChev} alt="" />
+        <Link href='/marketplace'>
+          <img src="/chevron-left.png" className={styles.navChev} alt="" />
+        </Link>
         <div className={styles.innerDetailWrapper}>
           <div className={styles.topSection}>
             <div className={styles.leftSide}>
