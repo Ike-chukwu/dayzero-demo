@@ -6,6 +6,7 @@ import PlayerCard from "@/app/components/PlayerCard/PlayerCard";
 import FlagSlider from "@/app/components/FlagSlider/FlagSlider";
 
 const Overview = () => {
+  
   const levels = [
     {
       id: 0,

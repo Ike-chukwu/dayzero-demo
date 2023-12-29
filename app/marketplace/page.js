@@ -89,7 +89,10 @@ const Page = () => {
             </div>
             <div className={styles.mainNftCardContainer}>
               {/* {newCards.map((slug) => ( */}
-              <Link href={`/marketplace/${encodeURIComponent(1)}`}>
+              <Link
+                href={`/marketplace/${encodeURIComponent(1)}`}
+                style={{ textDecoration: "none" }}
+              >
                 <NftCard
                   imgSrc="/ilus.png"
                   name="card one"
