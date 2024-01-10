@@ -9,7 +9,7 @@ const PlayerCard = (props) => {
         <div className={styles.topPart}>
           <h2 className={styles.cardTitle}>card name</h2>
           <div className={styles.innerSpan}>
-            <span className={styles.action}>played</span>
+            <span className={styles.action}>played </span>
             <span className={styles.playValue}>235H12M</span>
           </div>
         </div>
@@ -46,7 +46,7 @@ const PlayerCard = (props) => {
         </div>
       </div>
       <div className={styles.imgContainer}>
-        <img src="/man.png" className={styles.manImg} alt="" />
+        <img src="/Man1.png" className={styles.manImg} alt="" />
       </div>
     </div>
   );

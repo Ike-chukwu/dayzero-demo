@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8rem;
     color: white;
     gap: 8rem;
     width: 1200px;
@@ -278,6 +277,7 @@
 
 
     .levelCardContainer {
+        padding-left: 1.5rem;
         grid-template-columns: repeat(2, 1fr);
     }
 

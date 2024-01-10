@@ -182,19 +182,34 @@
 
 @media(max-width:855px) {
 
+    .card {
+        width: 100%;
+        padding-top: 2rem;
+        padding-inline: 2rem;
+        padding-bottom: 1.6rem;
+    }
+
     .leftSide {
         width: 60%;
-        /* gap: 3rem; */
+        gap: 1.5rem;
     }
 
     .gameStats {
-        gap: 3rem;
+        gap: 1.5rem;
+    }
+
+    .imgContainer {
+        width: 40%;
     }
 
 }
 
 
 @media(max-width:280px) {
+    .card {
+        width: 100%;
+        padding: 1rem;
+    }
     .gamStatsRow {
         gap: 1rem;
     }

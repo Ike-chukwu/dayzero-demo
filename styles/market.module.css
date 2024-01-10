@@ -143,6 +143,7 @@
     padding-block: 3rem;
     margin-right: 2rem;
     font-family: Neue Montreal;
+    display: inline-block;
 }
 
 
@@ -260,7 +261,7 @@
         border-right: none;
         border-left: none;
     }
-    
+
 
     .spanCover:last-of-type {
         border-right: none;

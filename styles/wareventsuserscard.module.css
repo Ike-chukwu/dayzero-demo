@@ -223,8 +223,13 @@
 @media(max-width:855px) {
 
     .warCard {
-        padding: 2rem;
+        padding-block: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 2rem;
         align-items: flex-start;
+        justify-content: unset;
+        gap: 1rem;
+        position: relative;
     }
 
     .firstPart {
@@ -242,7 +247,7 @@
     }
 
     .userImg {
-        width: 60px;
+        width: 58px;
     }
 
     .userName {
@@ -250,9 +255,12 @@
     }
 
     .middlePortion {
+        padding-top: 0.9rem;
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .serial {
@@ -293,27 +301,25 @@
         font-size: 1.4rem;
     }
 
+    .lastPart{
+        position: absolute;
+        right: 2rem;
+        top: 7%;
+    }
+
     .lastPart .categpry {
         display: none;
     }
 
 
     .badge {
-        width: 40px;
-        margin-top: -2rem;
+        width: 29px;
     }
 }
 
 
 @media(max-width:464px) {
 
-    .warCard {
-        padding: 1rem;
-    }
-
-    .userImg {
-        width: 45px;
-    }
 
     .userName {
         font-size: 1.4rem;
@@ -328,10 +334,6 @@
         font-size: 1.6rem;
     }
 
-    .middlePortion {
-        width: 50%;
-    }
-
     .categoryTitle {
         font-size: 1.2rem;
     }
@@ -342,10 +344,5 @@
 
     .number {
         font-size: 1.1rem;
-    }
-
-    .badge {
-        width: 40px;
-        margin-top: -1rem;
     }
 }

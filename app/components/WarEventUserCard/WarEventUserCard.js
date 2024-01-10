@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "../../../styles/wareventsuserscard.module.css";
 
+
 const WarEventUserCard = (props) => {
+  
   return (
     <div className={styles.warCard}>
       <div className={styles.firstPart}>
@@ -10,7 +12,7 @@ const WarEventUserCard = (props) => {
           <p className={styles.userName}>
             {props.name}
             <span className={styles.serial}>{props.serial}</span>
-          </p>{" "}
+          </p>
           <p className={styles.level}>level {props.level}</p>
         </div>
       </div>
@@ -19,7 +21,7 @@ const WarEventUserCard = (props) => {
           <p className={styles.userName}>
             {props.name}
             <span className={styles.serial}>{props.serial}</span>
-          </p>{" "}
+          </p>
           <p className={styles.level}>level {props.level}</p>
         </div>
         <div className={styles.playerStats}>

@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import styles from "../../../styles/wareventslider.module.css";
+
+
 const WarEventSlider = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -61,18 +63,6 @@ const WarEventSlider = () => {
           onTouchMove={handleMouseMove}
           onTouchEnd={handleMouseUp}
         >
-          {/* {flags.map((item, index) => (
-            <span
-              // href=""
-              key={index}
-              onClick={(e) => handleLinkClick(e, item)}
-            >
-              <div className={styles.image}>
-                <img className={styles.specificImg} src={item.img} alt="" />
-                <p className={styles.environmentName}>{item.name}</p>
-              </div>
-            </span>
-          ))} */}
           <div
             className={`${styles.eventCard}`}
             style={{ borderBottom: ".005rem solid #423250" }}

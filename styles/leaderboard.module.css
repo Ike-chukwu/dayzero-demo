@@ -136,8 +136,8 @@
     .aspects {
         width: 100%;
         display: flex;
-        gap: unset;
-        justify-content: space-between;
+        gap: 5.6rem;
+        padding-left: 1.5rem;
     }
 
     .link {
@@ -161,4 +161,8 @@
         font-size: 3rem;
     }
 
+
+    .link {
+        font-size: 1.2rem;
+    }
 }

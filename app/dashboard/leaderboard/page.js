@@ -7,9 +7,11 @@ import { pvpUsers } from "../../constants";
 import { warUsers } from "../../constants";
 import WarEventUserCard from "@/app/components/WarEventUserCard/WarEventUserCard";
 
+
 const Page = (props) => {
   const [currentLoc, setCurrentLoc] = useState("pvp multiplayer");
   const aspects = ["pvp multiplayer", "war event"];
+  
 
   return (
     <div className={styles.leaderboardContainer}>
