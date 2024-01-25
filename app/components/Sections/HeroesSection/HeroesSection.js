@@ -8,10 +8,22 @@ import HeroesSlider from "../../HeroesSlider/HeroesSlider";
 const HeroesSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentMobileSection, setCurrentMobileSection] = useState("aboutText");
+  const [categoryCheck, setCategoryCheck] = useState("character cards");
+  const [characterIndex, setCharacterIndex] = useState(0);
+  const [imageArray, setImageArray] = useState(heroesList[0].imgs);
+
+  //function that changes content when small image is clicked
+  const imageChanger = (currentIndex) => {
+    setCharacterIndex(currentIndex);
+  };
 
   useEffect(() => {
-    console.log(heroesList[currentIndex][currentMobileSection].title);
-  }, [currentIndex]);
+    const imagePackInObject = heroesList.find(
+      (item) => item.category == categoryCheck
+    );
+    const actualImages = imagePackInObject.imgs;
+    setImageArray(actualImages);
+  }, [categoryCheck]);
 
   return (
     <div className={styles.heroesParent}>
@@ -20,6 +32,7 @@ const HeroesSection = () => {
         <HeroesSlider
           currentIndex={currentIndex}
           setCurrentIndex={setCurrentIndex}
+          setCategoryCheck={setCategoryCheck}
           heroesList={heroesList}
         />
         <div className={styles.heroCategories}>
@@ -35,6 +48,7 @@ const HeroesSection = () => {
               <span
                 onClick={() => {
                   setCurrentIndex(index);
+                  setCategoryCheck(info.category);
                 }}
                 className={`${styles.category} ${styles.notActive}`}
                 key={index}
@@ -46,41 +60,73 @@ const HeroesSection = () => {
         </div>
 
         <div className={styles.dynamicHeroesContent}>
-          <div className={styles.leftSide}>
+          <div
+            className={styles.leftSide}
+            style={{
+              alignSelf:
+                categoryCheck == "upgrade cards" ? "center" : "flex-end",
+            }}
+          >
             <div className={styles.aboutPart}>
               <h3 className={styles.heading}>
-                {heroesList[currentIndex].aboutText.title}
+                {heroesList[currentIndex].mainInfo[characterIndex]?.name
+                  ? heroesList[currentIndex].mainInfo[characterIndex].name
+                  : heroesList[currentIndex].mainInfo[0].name}
               </h3>
-              <button className={styles.btnOne}>about</button>
+              <button className={styles.btnOne}>description</button>
               <p className={styles.briefText}>
-                {heroesList[currentIndex].aboutText.pText}
+                {heroesList[currentIndex].mainInfo[characterIndex]?.description
+                  ? heroesList[currentIndex].mainInfo[characterIndex]
+                      .description
+                  : heroesList[currentIndex].mainInfo[0].description}
               </p>
             </div>
-            <div className={styles.abilityPart}>
-              <button className={styles.btnTwo}>special ability</button>
-              <p className={styles.briefText}>
-                {heroesList[currentIndex].abilityText.pText}
-              </p>
-            </div>
+            {categoryCheck == "upgrade cards" ? null : (
+              <div className={styles.abilityPart}>
+                <button className={styles.btnTwo}>special ability</button>
+                <p className={styles.briefText}>
+                  {
+                    heroesList[currentIndex].mainInfo[characterIndex]
+                      .specialAbility
+                  }
+                </p>
+              </div>
+            )}
           </div>
 
           <div className={styles.rightSide}>
             <div className={styles.mainImg}>
-              <img src="" className={styles.Img} alt="" />
+              <img
+                src={
+                  imageArray[characterIndex]
+                    ? imageArray[characterIndex]
+                    : imageArray[0]
+                }
+                className={styles.Img}
+                alt=""
+              />
             </div>
 
             <div className={styles.squareOptions}>
-              <div className={styles.option}></div>
-              <div className={styles.option}></div>
-              <div className={styles.option}></div>
-              <div className={styles.option}></div>
+              {imageArray.map((item, index) => {
+                return (
+                  <img
+                    onClick={() => imageChanger(index)}
+                    key={index}
+                    className={styles.option}
+                    src={item}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
 
         <div className={styles.dynamicMobileContent}>
           <h3 className={styles.heading}>
-            {heroesList[currentIndex].aboutText.title}
+            {heroesList[currentIndex].mainInfo[characterIndex]?.name
+              ? heroesList[currentIndex].mainInfo[characterIndex].name
+              : heroesList[currentIndex].mainInfo[0].name}
           </h3>
           <div className={styles.dynamicAspects}>
             <button
@@ -91,21 +137,31 @@ const HeroesSection = () => {
               }
               onClick={() => setCurrentMobileSection("aboutText")}
             >
-              about
+              description
             </button>
-            <button
-              className={
-                currentMobileSection === "abilityText"
-                  ? `${styles.dynamicCategory} ${styles.activeBtn}`
-                  : `${styles.dynamicCategory}`
-              }
-              onClick={() => setCurrentMobileSection("abilityText")}
-            >
-              special ability
-            </button>
+            {categoryCheck == "upgrade cards" ? null : (
+              <button
+                className={
+                  currentMobileSection === "abilityText"
+                    ? `${styles.dynamicCategory} ${styles.activeBtn}`
+                    : `${styles.dynamicCategory}`
+                }
+                onClick={() => setCurrentMobileSection("abilityText")}
+              >
+                special ability
+              </button>
+            )}
           </div>
           <p className={styles.briefText}>
-            {heroesList[currentIndex][currentMobileSection].pText}
+            {currentMobileSection === "aboutText"
+              ? heroesList[currentIndex].mainInfo[characterIndex]?.description
+                ? heroesList[currentIndex].mainInfo[characterIndex].description
+                : heroesList[currentIndex].mainInfo[0].description
+              : heroesList[currentIndex].mainInfo[characterIndex]
+                  ?.specialAbility
+              ? heroesList[currentIndex].mainInfo[characterIndex]
+                  ?.specialAbility
+              : null}
           </p>
         </div>
       </section>

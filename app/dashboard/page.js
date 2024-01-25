@@ -77,11 +77,10 @@ const Overview = () => {
           <div className={styles.topMostContainer}>
             <h1 className={`${styles.mainTitle} customFont`}>dayzero</h1>
             <p className={styles.textBrief}>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit,
+              Welcome to Day Zero, where every fight has a story, and your
+              decisions shape the world after its fall. Embark on a dangerous
+              journey where staying alive is tricky, friendships form in tough
+              times, and superhumans protect what's left of humanity.
             </p>
             <div className={styles.btnPack}>
               <button className={styles.btn}>play now</button>

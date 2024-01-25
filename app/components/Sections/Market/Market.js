@@ -9,8 +9,8 @@ const Market = () => {
           <div className={styles.initialPart}>
             <img src="/blackarrow.png" className={styles.blackArrow} alt="" />
             <p className={styles.briefText}>
-              THIS TEXT WILL HOUSE AN INTRO TO THIS GAME’S STORY. BRIEF YET
-              AROUSING CURIOSITY
+              Day Zero: Unleash the Future, Survive the Present, Shape Your
+              Destiny.
             </p>
           </div>
           <button className={styles.btnTwo}>buy dyz</button>

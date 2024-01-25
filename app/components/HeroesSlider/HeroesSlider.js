@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "../../../styles/heroesSlider.module.css";
 import { useState, useEffect, useRef } from "react";
-import stylesTwo from "../../../styles/fs.module.css"
-
+import stylesTwo from "../../../styles/fs.module.css";
 
 const HeroesSlider = (props) => {
   const [isDragging, setIsDragging] = useState(false);
@@ -83,7 +82,10 @@ const HeroesSlider = (props) => {
                 // href=""
                 className={`${styles.aspect} ${styles.notActive} ${stylesTwo.subheadingFont}`}
                 key={index}
-                onClick={(e) => props.setCurrentIndex(index)}
+                onClick={(e) => {
+                  props.setCurrentIndex(index);
+                  props.setCategoryCheck(item.category);
+                }}
               >
                 {item.category}
               </span>

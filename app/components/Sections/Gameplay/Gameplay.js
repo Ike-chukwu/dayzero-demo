@@ -6,14 +6,13 @@ const Gameplay = () => {
     <div className={styles.gameplayParent}>
       <section className={styles.gameplayContainer}>
         <h1 className={styles.mainHeading}>
-          more <br /> than a <br />
-          game
+          where <br /> gaming meets <br />
+          reality
         </h1>
         <div className={styles.bottomContent}>
           <p className={styles.textBrief}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            sint numquam, vel molestiae fugit maxime quos ex molestias unde ab,
-            porro ratione provident eum perferendis!
+            Experience a unique blend of strategy and action. Plan your moves,
+            deploy your troops, and outsmart your opponents to claim victory.
           </p>
           <div className={styles.btnPack}>
             <button className={styles.btn}>

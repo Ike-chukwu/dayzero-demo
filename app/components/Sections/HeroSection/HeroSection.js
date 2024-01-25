@@ -11,8 +11,8 @@ const HeroSection = () => {
         <h1 className={`${styles.mainTitle} customFont`}>dayzero</h1>
         <div className={styles.bottomContent}>
           <p className={styles.textBrief}>
-            THIS TEXT WILL HOUSE AN INTRO TO THIS GAME’S STORY. BRIEF YET
-            AROUSING CURIOSITY
+            Welcome to Day Zero, where every battle tells a tale, and your
+            choices echo through the remnants of a world in turmoil.
           </p>
           <div className={styles.btnPack}>
             <button className={styles.btn}>

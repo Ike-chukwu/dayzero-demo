@@ -18,7 +18,9 @@ const Navbar = (props) => {
 
   return (
     <nav className={styles.navbar}>
-      <img className={styles.orgLogo} src="/logo.png" alt="" />
+      <Link href="/">
+        <img className={styles.orgLogo} src="/logo.png" alt="" />
+      </Link>
       {pathname.includes("/marketplace") ? (
         <div className={styles.extraMiddleLink}>
           <Link

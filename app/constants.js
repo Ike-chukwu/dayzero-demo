@@ -2,6 +2,33 @@ export const heroesList = [
   {
     id: 0,
     category: "character cards",
+    mainInfo: [
+      {
+        name: "boma",
+        description:
+          "A towering figure with a permanent scowl, Boma possesses immense strength. His powerful fists target the biggest enemies.",
+        specialAbility: "High HP",
+      },
+      {
+        name: "george",
+        description:
+          "George, a mutant with adapted speed, attacks with a battering ram. Medium HP and a favorite target of any.",
+        specialAbility: " Mutant Speed Boost",
+      },
+      {
+        name: "moro",
+        description:
+          " Moro wears advanced exo armor with flight ability and dual claw attachments. Attacks from above with a preference for any target. ",
+        specialAbility: " Flight and Dual Claw Assault",
+      },
+      {
+        name: "zino",
+        description:
+          "Zino generates static electricity, distinguishing himself with a different-colored outfit. Launches electrical attacks instead of fireballs. ",
+        specialAbility: " Static Electricity Generation",
+      },
+    ],
+    imgs: ["/man-walk.png", "/sittin-man.png", "/faq.png", "/thinking.png"],
     aboutText: {
       title: "first title",
       pText:
@@ -15,6 +42,33 @@ export const heroesList = [
   {
     id: 1,
     category: "battle item cards",
+    mainInfo: [
+      {
+        name: "cluster bombs",
+        description:
+          "Unleashes several small bombs over enemy troops, causing widespread damage",
+        specialAbility: " Medium Damage Radius",
+      },
+      {
+        name: "Claymore Mine",
+        description:
+          "Placed on the path, the mine explodes when enemies come close, providing a defensive advantage.",
+        specialAbility: "  Short Range Damage, On Contact.",
+      },
+      {
+        name: "Mobile Artillery",
+        description:
+          " Advances and fires a blast of electricity, dealing high area damage to enemy troops.",
+        specialAbility: "  Long Range Damage, High Blast Radius",
+      },
+      {
+        name: "Fixed Artillery",
+        description:
+          "Targets and releases a single fire on the enemy until its timer runs out, offering strategic control.",
+        specialAbility: "Short Time Damage Effect. High Blast Radius.",
+      },
+    ],
+    imgs: ["/woman.png", "/walk.png", "/sittin-man.png", "/man-walk.png"],
     aboutText: {
       title: "second title",
       pText:
@@ -28,6 +82,24 @@ export const heroesList = [
   {
     id: 2,
     category: "upgrade cards",
+    mainInfo: [
+      {
+        name: "Standard Upgrade",
+        description:
+          "Basic upgrades for characters and items, enhancing overall performance.",
+      },
+      {
+        name: "High Caliber Upgrade",
+        description:
+          "Advanced upgrades with high-caliber improvements, providing superior strength and capabilities.",
+      },
+      {
+        name: "Heavy Duty Upgrade",
+        description:
+          "Top-tier upgrades, offering heavy-duty enhancements for characters and items.",
+      },
+    ],
+    imgs: ["/walk.png", "/sittin-man.png", "/woman.png"],
     aboutText: {
       title: "third title",
       pText:
