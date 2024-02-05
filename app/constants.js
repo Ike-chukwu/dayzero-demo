@@ -27,8 +27,55 @@ export const heroesList = [
           "Zino generates static electricity, distinguishing himself with a different-colored outfit. Launches electrical attacks instead of fireballs. ",
         specialAbility: " Static Electricity Generation",
       },
+      {
+        name: "Legend",
+        description:
+          "A cybernetically modified cyborg, Legend wields a massive sword. Very high HP and attacks with impressive speed.",
+        specialAbility: "  Cybernetic Sword Mastery.",
+      },
+      {
+        name: "Catch",
+        description:
+          "Catch, a muscular metal warrior, uses explosive punches with high HP. Detonates an explosive charge upon defeat, targeting the biggest threat. ",
+        specialAbility: "Explosive Punch.",
+      },
+      {
+        name: "Ji-Min",
+        description:
+          "i-Min is a tall artillery expert with a handheld launcher. High HP, slow speed, and targets the biggest enemy. ",
+        specialAbility: " Artillery Barrage.",
+      },
+      {
+        name: "Toph",
+        description:
+          "Toph, a heavily armored troop with flight ability, attacks from above with a flame thrower. Very high HP, favorite target is any. Launches a cluster bomb when defeated.",
+        specialAbility: "Cluster Bomb Deployment",
+      },
+      {
+        name: "Vera",
+        description:
+          "Vera appears as a common foot soldier with the ability to launch fireballs. Medium HP, light armor, and a favorite target of any.",
+        specialAbility: "Fireball Launch.",
+      },
+      {
+        name: "Crystal",
+        description:
+          "Crystal, a lightly armored sabre-wielding mutant, has stealth abilities. She can be dropped behind enemy lines with medium HP.",
+        specialAbility: "Stealth Infiltration.",
+      },
     ],
-    imgs: ["/man-walk.png", "/sittin-man.png", "/faq.png", "/thinking.png"],
+    imgs: [
+      "/Boma.png",
+      "/George.png",
+      "/Moro.png",
+      "/Zino.png",
+      "/Legend.png",
+      "/Catch.png",
+      "/JiMin.png",
+      "/Toph.png",
+      "/Vera.png",
+      "/Crystal.png",
+    ],
     aboutText: {
       title: "first title",
       pText:
@@ -53,18 +100,18 @@ export const heroesList = [
         name: "Claymore Mine",
         description:
           "Placed on the path, the mine explodes when enemies come close, providing a defensive advantage.",
-        specialAbility: "  Short Range Damage, On Contact.",
+        specialAbility: "Short Range Damage, On Contact.",
       },
       {
         name: "Mobile Artillery",
         description:
           " Advances and fires a blast of electricity, dealing high area damage to enemy troops.",
-        specialAbility: "  Long Range Damage, High Blast Radius",
+        specialAbility: "Long Range Damage, High Blast Radius",
       },
       {
         name: "Fixed Artillery",
         description:
-          "Targets and releases a single fire on the enemy until its timer runs out, offering strategic control.",
+          "Armed with assault rifles, light infantry units provide effective ranged attacks.",
         specialAbility: "Short Time Damage Effect. High Blast Radius.",
       },
     ],

@@ -17,12 +17,20 @@ const HeroesSection = () => {
     setCharacterIndex(currentIndex);
   };
 
+  //get images from the category the user clicks on
   useEffect(() => {
     const imagePackInObject = heroesList.find(
       (item) => item.category == categoryCheck
     );
     const actualImages = imagePackInObject.imgs;
     setImageArray(actualImages);
+  }, [categoryCheck]);
+
+  //this sets the description button active and sets the state to aboutText
+  useEffect(() => {
+    if (categoryCheck == "upgrade cards") {
+      setCurrentMobileSection("aboutText");
+    }
   }, [categoryCheck]);
 
   return (
@@ -85,10 +93,11 @@ const HeroesSection = () => {
               <div className={styles.abilityPart}>
                 <button className={styles.btnTwo}>special ability</button>
                 <p className={styles.briefText}>
-                  {
-                    heroesList[currentIndex].mainInfo[characterIndex]
-                      .specialAbility
-                  }
+                  {heroesList[currentIndex].mainInfo[characterIndex]
+                    ?.specialAbility
+                    ? heroesList[currentIndex].mainInfo[characterIndex]
+                        .specialAbility
+                    : heroesList[currentIndex].mainInfo[0].specialAbility}
                 </p>
               </div>
             )}
@@ -107,7 +116,13 @@ const HeroesSection = () => {
               />
             </div>
 
-            <div className={styles.squareOptions}>
+            <div
+              className={styles.squareOptions}
+              style={{
+                overflowY:
+                  categoryCheck !== "character cards" ? "hidden" : "scroll",
+              }}
+            >
               {imageArray.map((item, index) => {
                 return (
                   <img
@@ -159,9 +174,8 @@ const HeroesSection = () => {
                 : heroesList[currentIndex].mainInfo[0].description
               : heroesList[currentIndex].mainInfo[characterIndex]
                   ?.specialAbility
-              ? heroesList[currentIndex].mainInfo[characterIndex]
-                  ?.specialAbility
-              : null}
+              ? heroesList[currentIndex].mainInfo[characterIndex].specialAbility
+              : heroesList[currentIndex].mainInfo[0].specialAbility}
           </p>
         </div>
       </section>
